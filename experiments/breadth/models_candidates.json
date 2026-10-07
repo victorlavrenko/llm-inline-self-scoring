@@ -1,0 +1,305 @@
+{
+  "generators": [
+    {
+      "alias": "minimax-m3",
+      "route": "minimax/minimax-m3",
+      "provider_candidates": [
+        "minimax"
+      ],
+      "cohort": "previously_compliant",
+      "route_note": "Passed v1 smoke compliance; MiniMax provider resolved successfully.",
+      "family": "minimax"
+    },
+    {
+      "alias": "qwen3.7-flash",
+      "route": "qwen/qwen3.7-flash",
+      "provider_candidates": [
+        "alibaba"
+      ],
+      "cohort": "previously_compliant",
+      "route_note": "Passed v1 smoke compliance; Alibaba route resolved successfully.",
+      "family": "qwen"
+    },
+    {
+      "alias": "kimi-k2.5",
+      "route": "moonshotai/kimi-k2.5",
+      "provider_candidates": [
+        "siliconflow",
+        "deepinfra",
+        "novita"
+      ],
+      "cohort": "previously_compliant",
+      "route_note": "Passed v1 smoke compliance; SiliconFlow resolved successfully.",
+      "family": "moonshot"
+    },
+    {
+      "alias": "gpt-oss-120b",
+      "route": "openai/gpt-oss-120b",
+      "provider_candidates": [
+        "deepinfra",
+        "coreweave",
+        "novita",
+        "akash"
+      ],
+      "cohort": "previously_compliant",
+      "route_note": "Passed v1 smoke compliance; DeepInfra resolved successfully.",
+      "family": "openai"
+    },
+    {
+      "alias": "gemma-3-12b-it",
+      "route": "google/gemma-3-12b-it",
+      "provider_candidates": [
+        "deepinfra",
+        "novita"
+      ],
+      "cohort": "previously_compliant",
+      "route_note": "Passed v1 smoke compliance; DeepInfra resolved successfully.",
+      "family": "google"
+    },
+    {
+      "alias": "glm-5.3-flash",
+      "route": "z-ai/glm-5.3-flash",
+      "provider_candidates": [
+        "novita",
+        "deepinfra",
+        "streamlake"
+      ],
+      "cohort": "previously_compliant",
+      "route_note": "Passed v1 smoke compliance; Novita was the successful frozen route after DeepInfra rate limiting.",
+      "family": "z-ai"
+    },
+    {
+      "alias": "deepseek-v3.2",
+      "route": "deepseek/deepseek-v3.2",
+      "provider_candidates": [
+        "deepinfra",
+        "siliconflow",
+        "streamlake"
+      ],
+      "cohort": "previously_compliant",
+      "route_note": "Passed v1 smoke compliance; DeepInfra resolved successfully after StreamLake 404.",
+      "family": "deepseek"
+    },
+    {
+      "alias": "grok-4.7",
+      "route": "x-ai/grok-4.7",
+      "provider_candidates": [
+        "x-ai"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Current OpenRouter model; Grok family was used in prior multi-model experiments.",
+      "family": "x-ai"
+    },
+    {
+      "alias": "deepseek-v4.1-flash",
+      "route": "deepseek/deepseek-v4.1-flash",
+      "provider_candidates": [
+        "deepinfra",
+        "deepseek",
+        "relace",
+        "morph"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Worked in prior 23-model experiments; current OpenRouter model.",
+      "family": "deepseek"
+    },
+    {
+      "alias": "deepseek-v4-flash-0731",
+      "route": "deepseek/deepseek-v4-flash-0731",
+      "provider_candidates": [
+        "deepinfra",
+        "streamlake",
+        "relace",
+        "sail"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Current GA DeepSeek V4 Flash snapshot.",
+      "family": "deepseek"
+    },
+    {
+      "alias": "mistral-small-2603",
+      "route": "mistralai/mistral-small-2603",
+      "provider_candidates": [
+        "mistral",
+        "venice"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Worked in prior v5.13 repair runs; current Mistral Small 4 route.",
+      "family": "mistral"
+    },
+    {
+      "alias": "ling-3.0-flash",
+      "route": "inclusionai/ling-3.0-flash",
+      "provider_candidates": [
+        "novita",
+        "deepinfra"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Ling 3.0 family was part of the prior broad model sweep; current providers include Novita and DeepInfra.",
+      "family": "inclusionai"
+    },
+    {
+      "alias": "minimax-m2.5",
+      "route": "minimax/minimax-m2.5",
+      "provider_candidates": [
+        "minimax",
+        "novita",
+        "streamlake",
+        "venice"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Additional MiniMax family model; current OpenRouter route.",
+      "family": "minimax"
+    },
+    {
+      "alias": "glm-5.3",
+      "route": "z-ai/glm-5.3",
+      "provider_candidates": [
+        "deepinfra",
+        "novita",
+        "phala",
+        "streamlake"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Full GLM 5.3 model in addition to the already-compliant Flash variant.",
+      "family": "z-ai"
+    },
+    {
+      "alias": "qwen3.8-flash",
+      "route": "qwen/qwen3.8-flash",
+      "provider_candidates": [
+        "alibaba",
+        "deepinfra",
+        "phala",
+        "darkbloom"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Current Qwen Flash model, released Aug 2026.",
+      "family": "qwen"
+    },
+    {
+      "alias": "qwen3.8-27b",
+      "route": "qwen/qwen3.8-27b",
+      "provider_candidates": [
+        "deepinfra",
+        "phala",
+        "parasail",
+        "darkbloom"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Current dense Qwen3.8 model; screened independently for sentence-level score compliance.",
+      "family": "qwen"
+    },
+    {
+      "alias": "qwen3.5-35b-a3b",
+      "route": "qwen/qwen3.5-35b-a3b",
+      "provider_candidates": [
+        "deepinfra",
+        "parasail",
+        "darkbloom"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Additional Qwen scale/architecture point; current OpenRouter route.",
+      "family": "qwen"
+    },
+    {
+      "alias": "qwen3.5-397b-a17b",
+      "route": "qwen/qwen3.5-397b-a17b",
+      "provider_candidates": [
+        "alibaba",
+        "deepinfra",
+        "phala",
+        "streamlake"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Large Qwen3.5 MoE; current OpenRouter route.",
+      "family": "qwen"
+    },
+    {
+      "alias": "mimo-v2.6-flash",
+      "route": "xiaomi/mimo-v2.6-flash",
+      "provider_candidates": [
+        "xiaomi",
+        "deepinfra"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Current Xiaomi MiMo model; providers include Xiaomi and DeepInfra.",
+      "family": "xiaomi"
+    },
+    {
+      "alias": "hy4-preview",
+      "route": "tencent/hy4-preview",
+      "provider_candidates": [
+        "deepinfra",
+        "siliconflow",
+        "novita",
+        "tencent"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Current Tencent Hy4 preview; current providers include DeepInfra, SiliconFlow, Novita, Tencent Cloud.",
+      "family": "tencent"
+    },
+    {
+      "alias": "nemotron-3-ultra",
+      "route": "nvidia/nemotron-3-ultra-550b-a55b",
+      "provider_candidates": [
+        "baseten",
+        "deepinfra",
+        "venice"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Different NVIDIA model from the noncompliant Lightning variant; screened independently.",
+      "family": "nvidia"
+    },
+    {
+      "alias": "command-a-plus",
+      "route": "cohere/command-a-plus",
+      "provider_candidates": [
+        "cohere"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Current Cohere flagship route.",
+      "family": "cohere"
+    },
+    {
+      "alias": "llama-4-maverick",
+      "route": "meta-llama/llama-4-maverick",
+      "provider_candidates": [
+        "deepinfra",
+        "groq",
+        "novita"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Different Meta model from the noncompliant Llama 3.3 70B; screened independently.",
+      "family": "meta"
+    },
+    {
+      "alias": "phi-4",
+      "route": "microsoft/phi-4",
+      "provider_candidates": [
+        "deepinfra",
+        "novita"
+      ],
+      "cohort": "new_screen",
+      "route_note": "Microsoft family diversity; current OpenRouter route.",
+      "family": "microsoft"
+    }
+  ],
+  "judges": [
+    {
+      "alias": "gpt-5.6-sol",
+      "route": "openai/gpt-5.6-sol",
+      "provider": "openai"
+    },
+    {
+      "alias": "claude-opus-5.5",
+      "route": "anthropic/claude-opus-5.5",
+      "provider": "anthropic"
+    },
+    {
+      "alias": "gemini-3.1-pro-preview",
+      "route": "google/gemini-3.1-pro-preview",
+      "provider": "google-ai-studio"
+    }
+  ]
+}

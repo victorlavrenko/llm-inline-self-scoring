@@ -1,0 +1,190 @@
+{
+  "generators": [
+    {
+      "alias": "minimax-m3",
+      "route": "minimax/minimax-m3",
+      "provider": "minimax",
+      "family": "minimax",
+      "cohort": "previously_compliant"
+    },
+    {
+      "alias": "qwen3.7-flash",
+      "route": "qwen/qwen3.7-flash",
+      "provider": "alibaba",
+      "family": "qwen",
+      "cohort": "previously_compliant"
+    },
+    {
+      "alias": "kimi-k2.5",
+      "route": "moonshotai/kimi-k2.5",
+      "provider": "siliconflow",
+      "family": "moonshot",
+      "cohort": "previously_compliant"
+    },
+    {
+      "alias": "gpt-oss-120b",
+      "route": "openai/gpt-oss-120b",
+      "provider": "deepinfra",
+      "family": "openai",
+      "cohort": "previously_compliant"
+    },
+    {
+      "alias": "gemma-3-12b-it",
+      "route": "google/gemma-3-12b-it",
+      "provider": "deepinfra",
+      "family": "google",
+      "cohort": "previously_compliant"
+    },
+    {
+      "alias": "glm-5.3-flash",
+      "route": "z-ai/glm-5.3-flash",
+      "provider": "novita",
+      "family": "z-ai",
+      "cohort": "previously_compliant"
+    },
+    {
+      "alias": "deepseek-v3.2",
+      "route": "deepseek/deepseek-v3.2",
+      "provider": "deepinfra",
+      "family": "deepseek",
+      "cohort": "previously_compliant"
+    },
+    {
+      "alias": "grok-4.7",
+      "route": "x-ai/grok-4.7",
+      "provider": "xai/zdr",
+      "family": "x-ai",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "deepseek-v4.1-flash",
+      "route": "deepseek/deepseek-v4.1-flash",
+      "provider": "deepinfra",
+      "family": "deepseek",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "deepseek-v4-flash-0731",
+      "route": "deepseek/deepseek-v4-flash-0731",
+      "provider": "streamlake",
+      "family": "deepseek",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "mistral-small-2603",
+      "route": "mistralai/mistral-small-2603",
+      "provider": "mistral",
+      "family": "mistral",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "ling-3.0-flash",
+      "route": "inclusionai/ling-3.0-flash",
+      "provider": "novita",
+      "family": "inclusionai",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "minimax-m2.5",
+      "route": "minimax/minimax-m2.5",
+      "provider": "minimax",
+      "family": "minimax",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "glm-5.3",
+      "route": "z-ai/glm-5.3",
+      "provider": "deepinfra",
+      "family": "z-ai",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "qwen3.8-flash",
+      "route": "qwen/qwen3.8-flash",
+      "provider": "alibaba",
+      "family": "qwen",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "qwen3.8-27b",
+      "route": "qwen/qwen3.8-27b",
+      "provider": "deepinfra",
+      "family": "qwen",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "qwen3.5-35b-a3b",
+      "route": "qwen/qwen3.5-35b-a3b",
+      "provider": "deepinfra",
+      "family": "qwen",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "qwen3.5-397b-a17b",
+      "route": "qwen/qwen3.5-397b-a17b",
+      "provider": "alibaba",
+      "family": "qwen",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "mimo-v2.6-flash",
+      "route": "xiaomi/mimo-v2.6-flash",
+      "provider": "xiaomi",
+      "family": "xiaomi",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "hy4-preview",
+      "route": "tencent/hy4-preview",
+      "provider": "siliconflow",
+      "family": "tencent",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "nemotron-3-ultra",
+      "route": "nvidia/nemotron-3-ultra-550b-a55b",
+      "provider": "baseten",
+      "family": "nvidia",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "command-a-plus",
+      "route": "cohere/command-a-plus",
+      "provider": "cohere",
+      "family": "cohere",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "llama-4-maverick",
+      "route": "meta-llama/llama-4-maverick",
+      "provider": "novita",
+      "family": "meta",
+      "cohort": "new_screen"
+    },
+    {
+      "alias": "phi-4",
+      "route": "microsoft/phi-4",
+      "provider": "deepinfra",
+      "family": "microsoft",
+      "cohort": "new_screen"
+    }
+  ],
+  "judges": [
+    {
+      "alias": "gpt-5.6-sol",
+      "route": "openai/gpt-5.6-sol",
+      "provider": "openai"
+    },
+    {
+      "alias": "claude-opus-5.5",
+      "route": "anthropic/claude-opus-5.5",
+      "provider": "anthropic"
+    },
+    {
+      "alias": "gemini-3.1-pro-preview",
+      "route": "google/gemini-3.1-pro-preview",
+      "provider": "google-ai-studio"
+    }
+  ],
+  "note": "Provider pins were selected by prepare_routes.py before the scientific run and are frozen thereafter."
+}

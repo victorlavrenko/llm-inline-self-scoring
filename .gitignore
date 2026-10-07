@@ -1,0 +1,31 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# LaTeX build products
+*.aux
+*.log
+*.out
+*.toc
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# New local experimental runs; frozen_run directories are explicitly tracked.
+experiments/main/runs/
+experiments/native_language_pilot/runs/
+experiments/breadth/runs/

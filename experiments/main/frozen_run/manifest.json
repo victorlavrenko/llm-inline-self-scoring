@@ -1,0 +1,41 @@
+{
+  "ai_score_instruction": "After every sentence, assess how likely an average human reader would be to think that sentence was AI-generated. Use an integer from 0 to 100, where 0 means very human-like and 100 means obviously AI-generated. Put the sentence's normal closing punctuation first, then immediately append the assessment as <AI SCORE: n>.",
+  "baseline_system": "Follow the user's writing task and formatting instructions exactly.\n\nWhile writing, actively avoid AI-slop: generic, formulaic, clichéd, overly polished, promotional, repetitive, or obviously AI-generated phrasing. Prefer concrete, natural, specific language that sounds like something a real person would genuinely write.\n\nProduce only the requested text.",
+  "cases": 100,
+  "code_version": "1.4",
+  "common_anti_slop_instruction": "Follow the user's writing task and formatting instructions exactly.\n\nWhile writing, actively avoid AI-slop: generic, formulaic, clichéd, overly polished, promotional, repetitive, or obviously AI-generated phrasing. Prefer concrete, natural, specific language that sounds like something a real person would genuinely write.",
+  "generation_max_tokens": 8192,
+  "generation_protocol_version": "matched-antislop-selfscore-v1",
+  "generation_retry_max_tokens": 16384,
+  "generation_temperature": 0.7,
+  "generators": [
+    "gpt-5.6-sol",
+    "claude-opus-5.5",
+    "gemini-3.1-pro-preview",
+    "deepseek-v4.1-flash"
+  ],
+  "judge_max_tokens": 1024,
+  "judge_protocol_version": "blind-slop-pairwise-v1.2-matched-antislop",
+  "judge_reasoning_effort": "low",
+  "judge_retry_max_tokens": 4096,
+  "judge_system": "You are a blind pairwise evaluator of writing style. You will receive an original writing task and two candidate answers. Judge only which complete answer sounds MORE like stereotypical AI-generated slop. AI slop includes generic or canned phrasing, formulaic transitions, polished-but-vague abstractions, repetitive structure, unnecessary framing, forced summaries or conclusions, marketing-like language, excessive symmetry, and other stylistic signals that make prose feel machine-generated. Do not try to guess how either answer was produced. Do not reward or punish an answer merely for being longer. Factual correctness is not the target except when it directly manifests as generic/evasive AI-like prose. If neither answer is meaningfully more AI-sloppy, answer TIE. Return exactly one token: A, B, or TIE.",
+  "judge_temperature": 0.0,
+  "judges": [
+    "gpt-5.6-sol",
+    "claude-opus-5.5",
+    "gemini-3.1-pro-preview",
+    "deepseek-v4.1-flash"
+  ],
+  "mirror": true,
+  "models_file": "models_current.json",
+  "models_sha256": "2e67edaf7cf5ab732872009b3836d5d90a09d04d93249a63fb688dc717705c66",
+  "prompts_file": "prompts.jsonl",
+  "prompts_sha256": "921b0e48c1f8dd463eeb2ecf81883d7fad8cd90fcf28c1c9cede25b95536c9f2",
+  "replicates": 1,
+  "runtime_provider_overrides": {
+    "deepseek-v4.1-flash": "together"
+  },
+  "schema_version": "2",
+  "seed": 20261001,
+  "selfscore_system": "Follow the user's writing task and formatting instructions exactly.\n\nWhile writing, actively avoid AI-slop: generic, formulaic, clichéd, overly polished, promotional, repetitive, or obviously AI-generated phrasing. Prefer concrete, natural, specific language that sounds like something a real person would genuinely write.\n\nAfter every sentence, assess how likely an average human reader would be to think that sentence was AI-generated. Use an integer from 0 to 100, where 0 means very human-like and 100 means obviously AI-generated. Put the sentence's normal closing punctuation first, then immediately append the assessment as <AI SCORE: n>.\n\nProduce only the requested text and the required AI SCORE tags."
+}

@@ -1,0 +1,199 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=0.9in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,matrix,calc}
+\usepackage{natbib}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{caption}
+
+\definecolor{accent}{HTML}{315E8A}
+\definecolor{lightaccent}{HTML}{EAF1F7}
+\definecolor{lightgray}{HTML}{F3F4F5}
+
+\tikzset{
+  archblock/.style={draw=black!45,rounded corners=2pt,fill=lightgray,minimum height=7.5mm,text width=18mm,align=center,inner sep=2pt,font=\scriptsize},
+  archmodel/.style={draw=accent!85,rounded corners=2pt,fill=lightaccent,line width=0.9pt,minimum height=8mm,text width=19mm,align=center,inner sep=2pt,font=\scriptsize},
+  archchannel/.style={draw=accent!75,rounded corners=2pt,fill=white,minimum height=7.5mm,text width=22mm,align=center,inner sep=2pt,font=\scriptsize},
+  archflow/.style={-{Latex[length=1.8mm]},line width=0.65pt,draw=black!72},
+  archfeedback/.style={-{Latex[length=1.7mm]},line width=0.65pt,draw=accent!80,dashed}
+}
+
+\setlength{\parindent}{1em}
+\setlength{\parskip}{0pt}
+\setlist{nosep,leftmargin=1.35em}
+\setlength{\emergencystretch}{1.5em}
+\captionsetup{font=small,skip=3pt}
+\clubpenalty=10000
+\widowpenalty=10000
+\displaywidowpenalty=10000
+\flushbottom
+
+\newcommand{\scoretag}{\texttt{<AI SCORE: n>}}
+\newcommand{\selfscore}{\textsc{SelfScore}}
+\newcommand{\baseline}{\textsc{Baseline}}
+
+\title{\vspace{-1.35em}\textbf{Zero-Shot Inline Self-Scoring Across 23 Language Models}}
+\author{Victor Lavrenko\\[-0.1em]
+\small PeaceTech VC\\[-0.2em]
+\small \texttt{victor@peacetech.vc}}
+\date{October 7, 2026}
+
+\begin{document}
+\maketitle
+\vspace{-1.35em}
+
+\begin{abstract}
+Many LLM systems generate an answer and evaluate it in a second pass. We test whether evaluation can instead be emitted \emph{inside the original generation trajectory}, without training. This paper is about the \emph{quality of generation}, not the quality or calibration of the scores: before studying whether an inline score is useful for control, a necessary prerequisite is that adding the evaluation channel does not damage the answer itself. In a primary study, four frontier models answer 100 matched writing prompts under a baseline condition and a treatment that appends a 0--100 AI-likeness score after every sentence; scores are stripped and never used for revision or selection. A blind mirrored external panel prefers the self-scored text in 244 of 348 directional comparisons (70.1\%; prompt-cluster bootstrap 95\% CI 65.1--75.0\%). A 20-model, 20-prompt breadth replication gives a smaller but still positive aggregate effect: 206 self-scoring wins versus 149 baseline wins among 355 directional outcomes (58.0\%), with strong heterogeneity across models. A small blind human validation in a language native to the author is much less decisive (7 self-scoring preferences, 5 baseline, 12 ties), but does not suggest that the added channel worsens generation. Across both studies there are 23 distinct generator model names. The main finding is therefore a prerequisite result: inline self-evaluation does not generally ruin generation, and for many models---modestly on average in the broad replication---AI judges find that it improves the generated output even when the scores are never consumed downstream.
+\end{abstract}
+
+\section{Introduction}
+
+Evaluation is increasingly a second inference problem: a model produces an answer, then the same or another model scores, critiques, routes, or verifies it. This enables best-of-$N$, self-correction, search, and agentic control, but requires another invocation over already-generated text. We ask a simpler architectural question: \emph{must evaluation be generated in a separate pass, or can the generator expose a useful local self-evaluation signal during the original trajectory?}
+
+Concurrent self-evaluation itself is not new. Most directly, \citet{zhao2024selfeval} prompted GPT-4 to emit a legal-task prediction and confidence in one call and found that concurrent confidence outperformed a two-pass variant. Learned systems such as Self-RAG and confidence-token methods make reflection or confidence operational through training \citep{asai2024selfrag,chuang2025confidence}; post-hoc methods instead generate feedback and revise in later passes \citep{madaan2023selfrefine,xie2023selfevaluation}. Our narrower contribution is a cross-model characterization of what off-the-shelf models already do \emph{zero-shot}: repeated sentence-level evaluation during open-ended generation, with the score deliberately left unused downstream.
+
+We first test four frontier models deeply on 100 prompts each, then test breadth using 20 screened configurations on 20 frozen prompts. The central question is intentionally prior to score calibration: does requiring an inline evaluative channel preserve the quality of the text being generated? The answer is heterogeneous but encouraging---several models improve substantially, some are neutral, and some become worse, while the aggregate effect is positive. Figures~\ref{fig:separate-evaluation} and~\ref{fig:inline-self-scoring} show the systems motivation; the experiments test this prerequisite, not an operational replacement for an evaluator.
+
+\begin{figure}[t]
+\begin{minipage}[t]{0.485\linewidth}
+\centering
+\begin{tikzpicture}[scale=0.92,transform shape]
+  \matrix (m) [matrix of nodes,column sep=2.5mm,row sep=5.5mm,nodes={anchor=center},ampersand replacement=\&] {
+    |[archblock]| User prompt
+      \& |[archmodel]| Generator
+      \& |[archblock]| Answer \\
+    \& |[archblock]| Orchestrator
+      \& |[archmodel,text width=20mm]| {Evaluator / second pass} \\
+  };
+  \draw[archflow] (m-1-1) -- (m-1-2);
+  \draw[archflow] (m-1-2) -- (m-1-3);
+  \draw[archflow] (m-1-3) -- (m-2-3);
+  \draw[archflow] (m-2-3) -- (m-2-2);
+  \draw[archfeedback] (m-2-2) -- (m-1-2);
+\end{tikzpicture}
+\captionof{figure}{\textbf{Separate evaluation.} A second model role or pass evaluates the answer.}
+\label{fig:separate-evaluation}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\linewidth}
+\centering
+\begin{tikzpicture}[scale=0.92,transform shape,node distance=0mm]
+  \node[archblock,text width=20mm] (prompt) {Prompt + quality criterion + score request};
+  \node[archmodel,text width=19mm, right=2.5mm of prompt] (generator) {Single language model};
+  \coordinate (fork) at ($(generator.east)+(1.8mm,0)$);
+  \node[archchannel,text width=21mm, anchor=west] (answer) at ($(fork)+(2.5mm,4.5mm)$) {Visible answer};
+  \node[archchannel,text width=21mm, anchor=west] (score) at ($(fork)+(2.5mm,-4.5mm)$) {Hidden self-score};
+  \node[archblock,text width=19mm, below=5.5mm of generator] (orchestrator) {Orchestrator};
+  \draw[archflow] (prompt) -- (generator);
+  \draw[archflow] (generator.east) -- (fork);
+  \fill[black!65] (fork) circle (0.9pt);
+  \draw[black!72,line width=0.65pt] (fork) -- (fork |- answer.west);
+  \draw[black!72,line width=0.65pt] (fork) -- (fork |- score.west);
+  \draw[archflow] (fork |- answer.west) -- (answer.west);
+  \draw[archflow] (fork |- score.west) -- (score.west);
+  \draw[archflow] (score.south) -- ++(0,-2.5mm) |- (orchestrator.east);
+  \draw[archfeedback] (orchestrator.north) -- (generator.south);
+\end{tikzpicture}
+\captionof{figure}{\textbf{Inline self-scoring.} One trajectory emits the answer and an evaluative side signal.}
+\label{fig:inline-self-scoring}
+\end{minipage}
+\end{figure}
+
+\section{Method}
+
+\textbf{Matched intervention.} We use 100 English prompts spanning ten domains; each requests a 5--8 sentence social-media post. Both conditions receive the same instruction to avoid generic, formulaic, clich\'ed, overly polished, promotional, repetitive, or obviously AI-generated prose. The treatment adds one requirement: after every sentence, output an integer 0--100 estimate of how AI-generated the sentence sounds, formatted as \scoretag{}. Before judging, tags are removed and whitespace normalized. Scores never trigger rejection, regeneration, branching, selection, or revision.
+
+\textbf{Primary study.} GPT-5.6 Sol, Claude Opus 5.5, Gemini 3.1 Pro Preview, and DeepSeek V4.1 Flash each generate both conditions for all 100 prompts: 800 accepted generations. Temperature is 0.7, and baseline/treatment are pinned to the same upstream provider within each pair. All 400 treatment outputs contain at least five valid tags and no tag remains after stripping. Each cleaned pair is judged in fresh calls by all four models; the primary panel excludes the generator itself. Judges choose which unlabeled answer sounds \emph{more} like stereotypical AI-generated prose, or \textsc{Tie}, and see both A/B orientations. Contradictory mirrored decisions are treated as order-sensitive rather than forced into a condition. The panel resolves 390/400 pairs.
+
+\textbf{Breadth replication.} Twenty prompts (two per original domain) are selected deterministically before breadth outcomes are observed. Before any quality judgments, 24 candidate configurations undergo an outcome-blind two-prompt compliance screen: each treatment must contain at least five valid tags, maintain at least 0.75 prose/score interleaving, leave no score material after stripping, and match the baseline's provider. Twenty pass and the roster is frozen. Those 20 configurations produce 800 generations. A fixed three-model panel (GPT-5.6 Sol, Claude Opus 5.5, Gemini 3.1 Pro Preview) judges each pair with the same mirrored procedure. Six pairs are skipped because cleaning leaves score-related material; eight more lack an order-consistent panel resolution, leaving 386 resolved pairs. We report pooled outcomes, a sign test over model directions, and a hierarchical bootstrap resampling developer family, then model, then pair. A strict sensitivity analysis reapplies the screen criteria to every treatment output.
+
+\section{Results}
+
+Table~\ref{tab:results} summarizes both studies. In the primary study, 244 pairs favor self-scoring, 104 favor baseline, 42 tie, and 10 are indeterminate. Thus 70.1\% of 348 directional outcomes favor self-scoring; a prompt-cluster bootstrap gives a 95\% CI of 65.1--75.0\%. At the prompt level, 73 prompts have a net self-scoring advantage across generators, 12 favor baseline, and 15 are balanced ($p=8.1\times10^{-12}$ on the 85 non-balanced prompts). The model-level rates are 84.8\% for Claude, 75.9\% for Gemini, 68.6\% for GPT, and 49.4\% for DeepSeek.
+
+\begin{table}[t]
+\centering
+\caption{Primary outcomes by generator, followed by breadth aggregates. Directional rates exclude ties and unresolved pairs.}
+\label{tab:results}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Generator / study & SelfScore & Baseline & Tie & Indet. & Directional \\
+\midrule
+Claude Opus 5.5 & 78 & 14 & 7 & 1 & 84.8\% \\
+Gemini 3.1 Pro & 66 & 21 & 8 & 5 & 75.9\% \\
+GPT-5.6 Sol & 59 & 27 & 14 & 0 & 68.6\% \\
+DeepSeek V4.1 Flash & 41 & 42 & 13 & 4 & 49.4\% \\
+\midrule
+Primary total & 244 & 104 & 42 & 10 & 70.1\% \\
+Breadth & 206 & 149 & 31 & 14 & 58.0\% \\
+Strict breadth & 199 & 144 & 29 & 28 & 58.0\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The breadth effect is smaller but remains positive in aggregate: 206 resolved pairs favor self-scoring, 149 favor baseline, and 31 tie, so 58.0\% of 355 directional outcomes favor self-scoring (naive exact sign test $p\approx0.0029$). Fifteen configurations have positive net effects, four negative, and one balanced; the model-direction sign test gives $p\approx0.019$. Examples range from Qwen 3.7 Flash (17 vs. 2 directional wins; 89.5\%) and Grok 4.7 (14 vs. 4; 77.8\%) to DeepSeek V4.1 Flash (5 vs. 15; 25.0\%) and Command A+ (6 vs. 13; 31.6\%).
+
+The 20 configurations are not 20 independent replications: related variants share developers and likely training lineage. At the developer-family level the directions are 9 positive, 3 negative, and 1 balanced ($p\approx0.146$); the family/model/pair bootstrap gives 47.4--67.4\%, which includes 50\%. Reapplying the compliance rule to every breadth treatment removes 20 outputs but leaves the directional rate unchanged at 58.0\% (199 vs. 144, 29 ties). Across the primary and breadth studies there are 23 distinct generator model names.
+
+\begin{table}[t]
+\centering
+\caption{Frozen breadth roster after the outcome-blind compliance screen. DeepSeek V4.1 Flash also appears in the primary study, giving 23 distinct generator names overall.}
+\label{tab:roster}
+\scriptsize
+\begin{tabular}{ll}
+\toprule
+MiniMax M3 & GLM 5.3 \\
+Qwen 3.7 Flash & Qwen 3.8 Flash \\
+Kimi K2.5 & Qwen 3.8 27B \\
+GPT-OSS 120B & Qwen 3.5 35B A3B \\
+Gemma 3 12B IT & Qwen 3.5 397B A17B \\
+GLM 5.3 Flash & MiMo V2.6 Flash \\
+DeepSeek V3.2 & HY4 Preview \\
+Grok 4.7 & Nemotron 3 Ultra \\
+DeepSeek V4.1 Flash & Command A+ \\
+DeepSeek V4 Flash 0731 & Llama 4 Maverick \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The four screened candidates that failed the treatment itself were Mistral Small 2603, Ling 3.0 Flash, MiniMax M2.5, and Phi-4; they are retained in the released screening record but excluded before any quality judgments. This separation matters because model inclusion was determined by whether the intervention was actually executed, not by whether self-scoring helped.
+
+The study deliberately does not test whether the emitted numbers are good scores. In the primary study, mean self-scores are 14.32 when the panel later prefers treatment and 14.34 when it prefers baseline, so the values are not validated as ranking signals. That is a later question: the present prerequisite is whether the extra channel itself damages generation. A 24-pair blind human validation in a language native to the author is much less decisive than the external panel: the human rater prefers self-scoring in 7 cases, baseline in 5, and ties 12. This small pilot therefore does not establish a human-perceived improvement, but it provides no indication of systematic degradation either; the stronger preference effect is mainly observed by the AI panel.
+
+\section{Discussion}
+
+The result is best interpreted as a trajectory effect, not successful self-correction. No revision occurs. After each sentence, the model must make an explicit judgment before continuing, so later tokens are conditioned on both the prose and that judgment. This could reflect prospective self-monitoring, retrospective conditioning on the emitted score, or generic extra deliberation. A non-evaluative interruption control (for example, sentence-level word counts) would help distinguish these mechanisms.
+
+The cross-model pattern is informative here. If the treatment were merely a universal formatting trick, one might expect a more uniform sign. Instead, the same instruction helps some model families, does little for others, and hurts several. The compliance screen adds a second distinction: some models cannot reliably implement sentence-level interleaving at all, while others implement it but show negative quality effects. We therefore separate \emph{interface feasibility} from \emph{benefit}. This is also why the breadth screen was frozen before judging quality and why failed configurations remain in the reproducibility record.
+
+Relative to the closest prompt-only precedent, our contribution is an extension rather than a first demonstration of concurrent self-evaluation. Zhao et al. showed that GPT-4 could emit confidence alongside a legal-task prediction; our experiments ask whether repeated local evaluation can coexist with open-ended generation across many contemporary models when the signal is deliberately unused. That last restriction is important: any quality difference must arise from producing the signal inside the trajectory, not from a later search, rejection, retrieval, or revision step. Learned reflection-token systems such as Self-RAG address the stronger operational problem, but require training.
+
+A practical deployment would not need to expose literal \scoretag{} text to users. A model API could return the answer normally while exposing a parallel hidden control stream, analogous in spirit to reasoning or tool-control metadata. An orchestrator could then act only when the signal crosses a calibrated threshold. The present experiment does \emph{not} implement that architecture; Figures~\ref{fig:separate-evaluation}--\ref{fig:inline-self-scoring} illustrate the motivation, while the empirical claim stops at feasibility and generation effect.
+
+The systems implication is deliberately staged. Before asking whether the score is calibrated, predictive, or useful for branching, we first need to know whether generating it harms the primary answer. The present results say that it does not on average in these experiments; moreover, AI judges observe a modest aggregate improvement in the broad replication. Only after establishing this prerequisite does it make sense to test the score itself as a control signal. The next step is therefore to calibrate the signal, use it for selective revision or branching, and compare quality/cost against a generate-then-judge loop.
+
+The main limitations are equally narrow: the task is stylistic rather than factual or reasoning-based; the primary outcome is an LLM panel, and mirrored ordering mitigates but does not eliminate judge bias \citep{zheng2023judging,calderon2025alternative}; related breadth configurations are not independent; and closed model/provider updates can complicate exact reproduction. Prior work also shows that intrinsic self-correction can fail without external feedback \citep{huang2024cannot}, so these results should not be generalized to arbitrary correction tasks.
+
+\section{Conclusion}
+
+Prompt-only inline self-evaluation is feasible across a broad set of current language models without generally degrading the text being generated. That is the paper's main prerequisite result. The four-model primary study shows a large AI-judged effect (70.1\% directional preference); the 20-model breadth replication shows a smaller, heterogeneous one (58.0\%), while a small blind human validation is largely tied and shows no sign of systematic worsening. The evidence does not establish that the numeric scores are calibrated evaluators, nor does it support a universal improvement claim. It establishes that an additional inline evaluation channel can coexist with generation and, for many models, slightly improve the resulting output on average---making the quality of the score itself worth studying next.
+
+\section*{Reproducibility and AI Assistance}
+
+The reproducibility package contains frozen prompts, provider pins, raw generations and mirrored judgments, compliance screening, SQLite logs, analyses, and the pilot in a language native to the author; it is intended for release at \url{https://github.com/victorlavrenko/llm-inline-self-scoring}. OpenAI ChatGPT (GPT-5.6 Sol) assisted with code organization, literature discovery, statistical cross-checking, drafting, editing, and LaTeX preparation. The author designed and ran the experiments, verified the results and references, and takes responsibility for all claims.
+
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

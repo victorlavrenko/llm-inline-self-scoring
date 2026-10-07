@@ -1,0 +1,151 @@
+pair_id,prompt_id,generator,replicate,judge,judge_route,orientation,answer_a_source,answer_b_source,raw_verdict,verdict,canonical_outcome,is_self_judge,provider,latency_s,prompt_tokens,completion_tokens,created_at
+7791cd8163693fe824d4ccda,p025,deepseek-v3.2,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,baseline,selfscore,"A has a forced ""So next time... remember:"" summary, the canned ""pretty cool trick our bodies have developed,"" and a tidy, generic structure. B has odd punctuation artifacts, but it adds a concrete detail about nerve damage and a more personal sign-off. It still uses ""The coolest part?"" and ""Our bodies are full of these weird, clever little tricks,"" so both show slop markers. On balance, A's formulaic conclusion reads as more stereotypical slop.
+
+**A**",A,baseline_more_slop,0,Anthropic,3.089984300080687,966,159,1791313634.6843007
+7791cd8163693fe824d4ccda,p025,deepseek-v3.2,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,selfscore,baseline,B,B,baseline_more_slop,0,Anthropic,5.228577099973336,966,163,1791313620.5019062
+7791cd8163693fe824d4ccda,p025,deepseek-v3.2,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,baseline,selfscore,A,A,baseline_more_slop,0,Google AI Studio,4.044872300000861,619,241,1791313657.7534409
+7791cd8163693fe824d4ccda,p025,deepseek-v3.2,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,selfscore,baseline,B,B,baseline_more_slop,0,Google AI Studio,5.037894799839705,619,319,1791313647.1314304
+7791cd8163693fe824d4ccda,p025,deepseek-v3.2,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,baseline,selfscore,A,A,baseline_more_slop,0,OpenAI,3.7153288999106735,591,134,1791313639.01547
+7791cd8163693fe824d4ccda,p025,deepseek-v3.2,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,selfscore,baseline,B,B,baseline_more_slop,0,OpenAI,2.882822799962014,591,52,1791313618.1550744
+092b72bed1c95414f2f6bad6,p046,deepseek-v3.2,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,selfscore,baseline,B,B,baseline_more_slop,0,Anthropic,5.3147543000523,947,189,1791313644.2320652
+092b72bed1c95414f2f6bad6,p046,deepseek-v3.2,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,baseline,selfscore,B,B,selfscore_more_slop,0,Anthropic,4.192064200062305,947,156,1791313638.5094812
+092b72bed1c95414f2f6bad6,p046,deepseek-v3.2,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,baseline,selfscore,TIE,TIE,tie,0,Google AI Studio,4.79664699989371,660,369,1791313675.2202141
+092b72bed1c95414f2f6bad6,p046,deepseek-v3.2,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,selfscore,baseline,TIE,TIE,tie,0,Google AI Studio,6.423148300033063,660,489,1791313678.8509607
+092b72bed1c95414f2f6bad6,p046,deepseek-v3.2,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,2.791541999904439,613,67,1791313623.357814
+092b72bed1c95414f2f6bad6,p046,deepseek-v3.2,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,selfscore,baseline,B,B,baseline_more_slop,0,OpenAI,2.392152199987322,613,54,1791313617.6596053
+2af8903932f77fde69e30660,p025,gemma-3-12b-it,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,baseline,selfscore,A,A,baseline_more_slop,0,Anthropic,4.111934500047937,880,83,1791313642.4143438
+2af8903932f77fde69e30660,p025,gemma-3-12b-it,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,selfscore,baseline,B,B,baseline_more_slop,0,Anthropic,3.814706200035289,880,99,1791313642.3240478
+2af8903932f77fde69e30660,p025,gemma-3-12b-it,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,selfscore,baseline,B,B,baseline_more_slop,0,Google AI Studio,3.3204286999534816,550,135,1791313672.5292735
+2af8903932f77fde69e30660,p025,gemma-3-12b-it,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,baseline,selfscore,A,A,baseline_more_slop,0,Google AI Studio,5.779802999924868,550,151,1791313630.7800753
+2af8903932f77fde69e30660,p025,gemma-3-12b-it,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,3.5863077000249177,530,81,1791313625.7512913
+2af8903932f77fde69e30660,p025,gemma-3-12b-it,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,selfscore,baseline,B,B,baseline_more_slop,0,OpenAI,1.8802660000510514,530,5,1791313628.4721718
+f33ddd9040f50e1ca0848b71,p046,gemma-3-12b-it,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,selfscore,baseline,A,A,selfscore_more_slop,0,Anthropic,3.617270100163296,898,94,1791313638.3018458
+f33ddd9040f50e1ca0848b71,p046,gemma-3-12b-it,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,baseline,selfscore,B,B,selfscore_more_slop,0,Anthropic,4.0079590999521315,898,98,1791313646.4224546
+f33ddd9040f50e1ca0848b71,p046,gemma-3-12b-it,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,selfscore,baseline,A,A,selfscore_more_slop,0,Google AI Studio,5.819821099983528,602,383,1791313664.5465653
+f33ddd9040f50e1ca0848b71,p046,gemma-3-12b-it,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,baseline,selfscore,TIE,TIE,tie,0,Google AI Studio,4.943552300101146,602,356,1791313652.3559077
+f33ddd9040f50e1ca0848b71,p046,gemma-3-12b-it,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,A,A,selfscore_more_slop,0,OpenAI,3.034045600099489,573,55,1791313622.3499868
+f33ddd9040f50e1ca0848b71,p046,gemma-3-12b-it,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,2.7167364999186248,573,48,1791313644.8506644
+5f2c942c414e68e4fa8b806e,p025,glm-5.3-flash,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,baseline,selfscore,A,A,baseline_more_slop,0,Anthropic,5.562335400143638,966,151,1791313629.2716074
+5f2c942c414e68e4fa8b806e,p025,glm-5.3-flash,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,selfscore,baseline,B,B,baseline_more_slop,0,Anthropic,4.14831900014542,966,58,1791313619.4190612
+5f2c942c414e68e4fa8b806e,p025,glm-5.3-flash,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,baseline,selfscore,A,A,baseline_more_slop,0,Google AI Studio,3.9254625998437405,618,167,1791313623.1934352
+5f2c942c414e68e4fa8b806e,p025,glm-5.3-flash,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,selfscore,baseline,B,B,baseline_more_slop,0,Google AI Studio,3.9950802999082953,618,142,1791313619.2675648
+5f2c942c414e68e4fa8b806e,p025,glm-5.3-flash,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,B,B,baseline_more_slop,0,OpenAI,1.2928666998632252,600,5,1791313629.4650543
+5f2c942c414e68e4fa8b806e,p025,glm-5.3-flash,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,A,A,baseline_more_slop,0,OpenAI,1.3523984998464584,600,5,1791313630.8177137
+056c8596942723693b8cce10,p046,glm-5.3-flash,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,baseline,selfscore,B,B,selfscore_more_slop,0,Anthropic,4.8738736000377685,932,239,1791313662.3591993
+056c8596942723693b8cce10,p046,glm-5.3-flash,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,selfscore,baseline,B,B,baseline_more_slop,0,Anthropic,5.104266700102016,932,153,1791313646.344295
+056c8596942723693b8cce10,p046,glm-5.3-flash,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,selfscore,baseline,A,A,selfscore_more_slop,0,Google AI Studio,5.1496568999718875,630,361,1791313662.903445
+056c8596942723693b8cce10,p046,glm-5.3-flash,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,baseline,selfscore,B,B,selfscore_more_slop,0,Google AI Studio,4.779312500031665,630,258,1791313654.714981
+056c8596942723693b8cce10,p046,glm-5.3-flash,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,baseline,selfscore,A,A,baseline_more_slop,0,OpenAI,2.4399656001478434,594,56,1791313619.3154569
+056c8596942723693b8cce10,p046,glm-5.3-flash,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,selfscore,baseline,B,B,baseline_more_slop,0,OpenAI,4.271944799926132,594,84,1791313632.7441463
+1b24faf6854237b13c6d6b05,p025,gpt-oss-120b,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,selfscore,baseline,B,B,baseline_more_slop,0,Anthropic,5.53269930020906,865,123,1791313647.856993
+1b24faf6854237b13c6d6b05,p025,gpt-oss-120b,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,baseline,selfscore,A,A,baseline_more_slop,0,Anthropic,5.164476400008425,865,155,1791313659.6588702
+1b24faf6854237b13c6d6b05,p025,gpt-oss-120b,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,baseline,selfscore,TIE,TIE,tie,0,Google AI Studio,3.9572797000873834,543,234,1791313619.22571
+1b24faf6854237b13c6d6b05,p025,gpt-oss-120b,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,selfscore,baseline,TIE,TIE,tie,0,Google AI Studio,3.953852799953893,543,249,1791313647.5320137
+1b24faf6854237b13c6d6b05,p025,gpt-oss-120b,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,B,B,baseline_more_slop,0,OpenAI,3.8754328000359237,536,102,1791313633.5783815
+1b24faf6854237b13c6d6b05,p025,gpt-oss-120b,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,4.455152300186455,536,156,1791313637.3475356
+ced36c53faf13c1ce5f3b442,p046,gpt-oss-120b,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,selfscore,baseline,"B is more generic and abstract. It opens with the canned frame ""I've been thinking about..."", uses phrasing like ""The trick is"", and closes on the slogan ""Let's stop letting yesterday's costs dictate today's choices!"" A grounds the point in a specific gym-membership example, which reads more like a real person's post.
+
+**B**",B,baseline_more_slop,0,Anthropic,2.2814990000333637,926,108,1791313657.9999087
+ced36c53faf13c1ce5f3b442,p046,gpt-oss-120b,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,baseline,selfscore,A,A,baseline_more_slop,0,Anthropic,1.4194722999818623,926,3,1791313621.6257446
+ced36c53faf13c1ce5f3b442,p046,gpt-oss-120b,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,selfscore,baseline,B,B,baseline_more_slop,0,Google AI Studio,3.728152999887243,619,184,1791313672.965131
+ced36c53faf13c1ce5f3b442,p046,gpt-oss-120b,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,baseline,selfscore,A,A,baseline_more_slop,0,Google AI Studio,3.9555820000823587,619,179,1791313630.1437974
+ced36c53faf13c1ce5f3b442,p046,gpt-oss-120b,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,B,B,baseline_more_slop,0,OpenAI,1.2970697002019733,593,5,1791313632.8916516
+ced36c53faf13c1ce5f3b442,p046,gpt-oss-120b,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,A,A,baseline_more_slop,0,OpenAI,1.4378418999258429,593,5,1791313623.7881186
+150e3dae54e6e4889447ab35,p025,kimi-k2.5,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,selfscore,baseline,"B opens with the canned rhetorical hook ""Ever get out of the shower and wonder..."", then uses the stock contrast ""it's more like an active reflex than passive bloating"" and closes on the generic line ""Wild that something so simple still has weird science behind it."" A reads more casual and specific: it cites the nerve-damage finding and sounds like a person talking.
+
+B",B,baseline_more_slop,0,Anthropic,2.9464938000310212,872,118,1791313650.8039515
+150e3dae54e6e4889447ab35,p025,kimi-k2.5,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,baseline,selfscore,A,A,baseline_more_slop,0,Anthropic,4.786586300004274,872,147,1791313629.934265
+150e3dae54e6e4889447ab35,p025,kimi-k2.5,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,baseline,selfscore,A,A,baseline_more_slop,0,Google AI Studio,5.397380999987945,549,448,1791313631.533928
+150e3dae54e6e4889447ab35,p025,kimi-k2.5,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,selfscore,baseline,B,B,baseline_more_slop,0,Google AI Studio,6.175946000032127,549,313,1791313653.7083166
+150e3dae54e6e4889447ab35,p025,kimi-k2.5,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,baseline,selfscore,A,A,baseline_more_slop,0,OpenAI,1.7502458000089973,541,5,1791313627.5019283
+150e3dae54e6e4889447ab35,p025,kimi-k2.5,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,selfscore,baseline,B,B,baseline_more_slop,0,OpenAI,2.4106529999990016,541,64,1791313620.5659752
+6e4eadc7632bbbd9815c3a7a,p046,kimi-k2.5,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,selfscore,baseline,B,B,baseline_more_slop,0,Anthropic,1.791122900089249,854,3,1791313651.8480914
+6e4eadc7632bbbd9815c3a7a,p046,kimi-k2.5,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,baseline,selfscore,A,A,baseline_more_slop,0,Anthropic,3.8343952998984605,854,108,1791313648.0669005
+6e4eadc7632bbbd9815c3a7a,p046,kimi-k2.5,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,selfscore,baseline,B,B,baseline_more_slop,0,Google AI Studio,3.9146188001614064,561,199,1791313632.2263985
+6e4eadc7632bbbd9815c3a7a,p046,kimi-k2.5,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,baseline,selfscore,A,A,baseline_more_slop,0,Google AI Studio,4.849078700179234,561,325,1791313658.4142528
+6e4eadc7632bbbd9815c3a7a,p046,kimi-k2.5,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,baseline,selfscore,A,A,baseline_more_slop,0,OpenAI,2.209446100052446,535,52,1791313645.7877977
+6e4eadc7632bbbd9815c3a7a,p046,kimi-k2.5,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,selfscore,baseline,B,B,baseline_more_slop,0,OpenAI,1.395930300001055,535,5,1791313632.2136784
+fc1c36a8e5299c115848c655,p025,llama-3.3-70b-instruct,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,baseline,selfscore,B,B,selfscore_more_slop,0,Anthropic,3.9682255999650806,1061,80,1791313634.4445012
+fc1c36a8e5299c115848c655,p025,llama-3.3-70b-instruct,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,selfscore,baseline,A,A,selfscore_more_slop,0,Anthropic,3.2585303999949247,1061,65,1791313631.5939891
+fc1c36a8e5299c115848c655,p025,llama-3.3-70b-instruct,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,baseline,selfscore,A,A,baseline_more_slop,0,Google AI Studio,7.695594199933112,707,546,1791313622.9668505
+fc1c36a8e5299c115848c655,p025,llama-3.3-70b-instruct,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,selfscore,baseline,A,A,selfscore_more_slop,0,Google AI Studio,7.340032800100744,707,577,1791313638.1204782
+fc1c36a8e5299c115848c655,p025,llama-3.3-70b-instruct,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,A,A,selfscore_more_slop,0,OpenAI,2.4516735000070184,677,5,1791313622.1641111
+fc1c36a8e5299c115848c655,p025,llama-3.3-70b-instruct,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,1.4114684998057783,677,5,1791313624.7694917
+f67a712b7da9607f280fb629,p046,llama-3.3-70b-instruct,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,selfscore,baseline,A,A,selfscore_more_slop,0,Anthropic,4.914216500008479,1058,139,1791313655.7184424
+f67a712b7da9607f280fb629,p046,llama-3.3-70b-instruct,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,baseline,selfscore,B,B,selfscore_more_slop,0,Anthropic,5.045373799977824,1058,172,1791313659.5880656
+f67a712b7da9607f280fb629,p046,llama-3.3-70b-instruct,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,selfscore,baseline,A,A,selfscore_more_slop,0,Google AI Studio,3.2204557999502867,753,173,1791313626.1878204
+f67a712b7da9607f280fb629,p046,llama-3.3-70b-instruct,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,baseline,selfscore,B,B,selfscore_more_slop,0,Google AI Studio,5.389724200125784,753,321,1791313663.804354
+f67a712b7da9607f280fb629,p046,llama-3.3-70b-instruct,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,A,A,selfscore_more_slop,0,OpenAI,1.7672458000015467,690,47,1791313638.6799464
+f67a712b7da9607f280fb629,p046,llama-3.3-70b-instruct,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,1.5721217999234796,690,5,1791313640.082368
+23363694cef0bba83552b67f,p025,minimax-m3,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,selfscore,baseline,"B has more slop markers: the ""something way more interesting"" setup, the ""So it's not X, it's Y"" contrast, the ""hits different"" phrase, and the ""quietly running the show"" ending. A reads more like a genuine personal post.
+
+**B**",B,baseline_more_slop,0,Anthropic,2.519568999996409,964,79,1791313617.7894819
+23363694cef0bba83552b67f,p025,minimax-m3,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,baseline,selfscore,A,A,baseline_more_slop,0,Anthropic,6.16948110004887,964,59,1791313628.3351276
+23363694cef0bba83552b67f,p025,minimax-m3,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,selfscore,baseline,B,B,baseline_more_slop,0,Google AI Studio,4.49473339994438,619,261,1791313642.6153195
+23363694cef0bba83552b67f,p025,minimax-m3,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,baseline,selfscore,A,A,baseline_more_slop,0,Google AI Studio,10.866920199943706,619,390,1791313626.1360483
+23363694cef0bba83552b67f,p025,minimax-m3,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,B,B,baseline_more_slop,0,OpenAI,1.600168300094083,591,5,1791313616.87536
+23363694cef0bba83552b67f,p025,minimax-m3,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,A,A,baseline_more_slop,0,OpenAI,1.0763441999442875,591,5,1791313635.7611766
+2b82c5f5f1893e7c19e7dcc4,p046,minimax-m3,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,baseline,selfscore,"B is the more AI-sloppy answer.
+
+B leans on the stock AI moves. It uses the ""isn't X, it's Y"" contrast in ""cutting your losses isn't quitting, it's just thinking clearly."" It adds a forced closing line, ""Your future self will thank you."" It sets up the concept with ""That little trap has a name,"" and it is broken into one-line paragraphs in a listicle style.
+
+A has some of the same feel, such as ""Future me,"" but it is more casual and less formulaic.
+
+**B**",B,selfscore_more_slop,0,Anthropic,2.7476047999225557,1003,164,1791313626.8117976
+2b82c5f5f1893e7c19e7dcc4,p046,minimax-m3,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,selfscore,baseline,A,A,selfscore_more_slop,0,Anthropic,5.6366537001449615,1003,81,1791313657.485166
+2b82c5f5f1893e7c19e7dcc4,p046,minimax-m3,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,selfscore,baseline,A,A,selfscore_more_slop,0,Google AI Studio,4.010845600161701,695,187,1791313658.726118
+2b82c5f5f1893e7c19e7dcc4,p046,minimax-m3,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,baseline,selfscore,B,B,selfscore_more_slop,0,Google AI Studio,6.965922100003809,695,537,1791313637.109935
+2b82c5f5f1893e7c19e7dcc4,p046,minimax-m3,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,A,A,selfscore_more_slop,0,OpenAI,2.8015303001739085,653,5,1791313619.7116787
+2b82c5f5f1893e7c19e7dcc4,p046,minimax-m3,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,2.215290700085461,653,5,1791313651.697115
+68ffe2da6fe98a0be9593452,p025,ministral-14b-2512,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,selfscore,baseline,B,B,baseline_more_slop,0,Anthropic,4.381800800096244,1100,125,1791313634.316422
+68ffe2da6fe98a0be9593452,p025,ministral-14b-2512,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,baseline,selfscore,A,A,baseline_more_slop,0,Anthropic,5.888031699927524,1100,161,1791313654.5427027
+68ffe2da6fe98a0be9593452,p025,ministral-14b-2512,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,baseline,selfscore,A,A,baseline_more_slop,0,Google AI Studio,3.5246009998954833,712,164,1791313668.0714736
+68ffe2da6fe98a0be9593452,p025,ministral-14b-2512,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,selfscore,baseline,B,B,baseline_more_slop,0,Google AI Studio,4.181395000079647,712,204,1791313635.7155964
+68ffe2da6fe98a0be9593452,p025,ministral-14b-2512,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,4.933216599980369,698,160,1791313629.703039
+68ffe2da6fe98a0be9593452,p025,ministral-14b-2512,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,selfscore,baseline,B,B,baseline_more_slop,0,OpenAI,4.504619800020009,698,99,1791313622.1647217
+7392883f47817f3b84557e4d,p046,ministral-14b-2512,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,baseline,selfscore,B,B,selfscore_more_slop,0,Anthropic,1.1495330000761896,1121,3,1791313630.421365
+7392883f47817f3b84557e4d,p046,ministral-14b-2512,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,selfscore,baseline,A,A,selfscore_more_slop,0,Anthropic,4.935727800009772,1121,115,1791313620.2062771
+7392883f47817f3b84557e4d,p046,ministral-14b-2512,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,selfscore,baseline,TIE,TIE,tie,0,Google AI Studio,6.618959999876097,749,458,1791313670.423681
+7392883f47817f3b84557e4d,p046,ministral-14b-2512,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,baseline,selfscore,B,B,selfscore_more_slop,0,Google AI Studio,6.33322919998318,749,533,1791313669.2369285
+7392883f47817f3b84557e4d,p046,ministral-14b-2512,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,A,A,selfscore_more_slop,0,OpenAI,1.4314417999703437,718,5,1791313628.172051
+7392883f47817f3b84557e4d,p046,ministral-14b-2512,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,2.554895699955523,718,71,1791313635.2996404
+559695231736551af3055a3c,p025,nemotron-3.5-lightning,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,selfscore,baseline,"A has more slop markers: ""biological hacks,"" ""Makes you appreciate,"" and a forced closing tip (""Next time you're washing dishes...""). B reads as more natural.
+
+**A**",A,selfscore_more_slop,0,Anthropic,2.309903800021857,803,62,1791313648.654357
+559695231736551af3055a3c,p025,nemotron-3.5-lightning,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,baseline,selfscore,B,B,selfscore_more_slop,0,Anthropic,3.6337528999429196,803,78,1791313650.0565636
+559695231736551af3055a3c,p025,nemotron-3.5-lightning,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,baseline,selfscore,B,B,selfscore_more_slop,0,Google AI Studio,5.524334799963981,507,166,1791313641.2410522
+559695231736551af3055a3c,p025,nemotron-3.5-lightning,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,selfscore,baseline,A,A,selfscore_more_slop,0,Google AI Studio,5.117672499967739,507,321,1791313628.3116095
+559695231736551af3055a3c,p025,nemotron-3.5-lightning,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,1.6020462000742555,498,5,1791313626.7401733
+559695231736551af3055a3c,p025,nemotron-3.5-lightning,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,selfscore,baseline,A,A,selfscore_more_slop,0,OpenAI,2.9737998000346124,498,61,1791313625.1378415
+ad743c07fc5e8259d93f7730,p046,nemotron-3.5-lightning,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,baseline,selfscore,B,B,selfscore_more_slop,0,Anthropic,3.6638980000279844,827,136,1791313630.4757545
+ad743c07fc5e8259d93f7730,p046,nemotron-3.5-lightning,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,selfscore,baseline,A,A,selfscore_more_slop,0,Anthropic,5.04734899988398,827,161,1791313625.1467142
+ad743c07fc5e8259d93f7730,p046,nemotron-3.5-lightning,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,selfscore,baseline,TIE,TIE,tie,0,Google AI Studio,12.019858699990436,552,377,1791313669.2087762
+ad743c07fc5e8259d93f7730,p046,nemotron-3.5-lightning,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,baseline,selfscore,TIE,TIE,tie,0,Google AI Studio,5.773714300012216,552,378,1791313624.999884
+ad743c07fc5e8259d93f7730,p046,nemotron-3.5-lightning,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,1.6364155998453498,534,5,1791313616.9098198
+ad743c07fc5e8259d93f7730,p046,nemotron-3.5-lightning,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,selfscore,baseline,A,A,selfscore_more_slop,0,OpenAI,2.4668168001808226,534,76,1791313636.9120548
+7e28575ee952d68dbabd9c87,p025,qwen3-30b-a3b-instruct-2507,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,baseline,selfscore,B,B,selfscore_more_slop,0,Anthropic,4.471963400021195,971,134,1791313638.916237
+7e28575ee952d68dbabd9c87,p025,qwen3-30b-a3b-instruct-2507,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,selfscore,baseline,A,A,selfscore_more_slop,0,Anthropic,1.5188142999541014,971,3,1791313622.0853243
+7e28575ee952d68dbabd9c87,p025,qwen3-30b-a3b-instruct-2507,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,baseline,selfscore,TIE,TIE,tie,0,Google AI Studio,7.319605099968612,622,625,1791313649.9352963
+7e28575ee952d68dbabd9c87,p025,qwen3-30b-a3b-instruct-2507,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,selfscore,baseline,TIE,TIE,tie,0,Google AI Studio,5.343493500025943,622,389,1791313637.5702605
+7e28575ee952d68dbabd9c87,p025,qwen3-30b-a3b-instruct-2507,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,A,A,selfscore_more_slop,0,OpenAI,3.1355959998909384,596,99,1791313649.4810276
+7e28575ee952d68dbabd9c87,p025,qwen3-30b-a3b-instruct-2507,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,2.8029663001652807,596,59,1791313626.591399
+0d69a90b3fb3778fc0a6ca26,p046,qwen3-30b-a3b-instruct-2507,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,baseline,selfscore,B,B,selfscore_more_slop,0,Anthropic,6.427214799914509,1010,157,1791313654.4944208
+0d69a90b3fb3778fc0a6ca26,p046,qwen3-30b-a3b-instruct-2507,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,selfscore,baseline,A,A,selfscore_more_slop,0,Anthropic,5.998238800093532,1010,172,1791313636.419978
+0d69a90b3fb3778fc0a6ca26,p046,qwen3-30b-a3b-instruct-2507,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,selfscore,baseline,A,A,selfscore_more_slop,0,Google AI Studio,6.171438199933618,701,454,1791313647.4121697
+0d69a90b3fb3778fc0a6ca26,p046,qwen3-30b-a3b-instruct-2507,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,baseline,selfscore,A,A,baseline_more_slop,0,Google AI Studio,6.433022199897096,701,505,1791313653.5648332
+0d69a90b3fb3778fc0a6ca26,p046,qwen3-30b-a3b-instruct-2507,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,A,A,selfscore_more_slop,0,OpenAI,2.821375200059265,659,78,1791313650.2341404
+0d69a90b3fb3778fc0a6ca26,p046,qwen3-30b-a3b-instruct-2507,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,3.452823500148952,659,95,1791313642.1333847
+2e13372165c54aef525b9f2c,p025,qwen3.7-flash,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,baseline,selfscore,B,B,selfscore_more_slop,0,Anthropic,4.28943150001578,998,109,1791313623.709116
+2e13372165c54aef525b9f2c,p025,qwen3.7-flash,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,selfscore,baseline,A,A,selfscore_more_slop,0,Anthropic,4.819173000054434,998,135,1791313641.2400744
+2e13372165c54aef525b9f2c,p025,qwen3.7-flash,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,selfscore,baseline,TIE,TIE,tie,0,Google AI Studio,6.00737649993971,608,416,1791313643.577854
+2e13372165c54aef525b9f2c,p025,qwen3.7-flash,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,baseline,selfscore,B,B,selfscore_more_slop,0,Google AI Studio,4.9830122999846935,608,339,1791313642.0932508
+2e13372165c54aef525b9f2c,p025,qwen3.7-flash,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,A,A,selfscore_more_slop,0,OpenAI,3.4699426000006497,599,115,1791313630.9718947
+2e13372165c54aef525b9f2c,p025,qwen3.7-flash,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,B,B,selfscore_more_slop,0,OpenAI,1.5798973999917507,599,5,1791313639.8824742
+b9942d323f4e662bd6f095b9,p046,qwen3.7-flash,0,claude-opus-5.5,anthropic/claude-opus-5.5,0,baseline,selfscore,"A reads as more AI-sloppy. Its phrasing is generic throughout (""The truth is,"" ""the most practical step,"" ""something with actual momentum""), and it relies on abstract framing with no concrete detail. B opens with a specific anecdote about a half-finished DIY project, which makes it read like a real person's post, although it has some formulaic touches of its own.
+
+A",A,baseline_more_slop,0,Anthropic,2.309422500198707,947,119,1791313620.0996194
+b9942d323f4e662bd6f095b9,p046,qwen3.7-flash,0,claude-opus-5.5,anthropic/claude-opus-5.5,1,selfscore,baseline,B,B,baseline_more_slop,0,Anthropic,2.43673889990896,947,48,1791313624.0636818
+b9942d323f4e662bd6f095b9,p046,qwen3.7-flash,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,0,baseline,selfscore,A,A,baseline_more_slop,0,Google AI Studio,4.35618650005199,611,304,1791313672.4278345
+b9942d323f4e662bd6f095b9,p046,qwen3.7-flash,0,gemini-3.1-pro-preview,google/gemini-3.1-pro-preview,1,selfscore,baseline,B,B,baseline_more_slop,0,Google AI Studio,4.832288599805906,611,275,1791313657.1886506
+b9942d323f4e662bd6f095b9,p046,qwen3.7-flash,0,gpt-5.6-sol,openai/gpt-5.6-sol,0,selfscore,baseline,B,B,baseline_more_slop,0,OpenAI,1.5458433998282999,588,5,1791313642.786787
+b9942d323f4e662bd6f095b9,p046,qwen3.7-flash,0,gpt-5.6-sol,openai/gpt-5.6-sol,1,baseline,selfscore,A,A,baseline_more_slop,0,OpenAI,2.6871745998505503,588,42,1791313650.219923

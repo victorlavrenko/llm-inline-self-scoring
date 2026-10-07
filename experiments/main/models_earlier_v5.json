@@ -1,0 +1,18 @@
+{
+  "generators": [
+    {"alias": "gpt-5.5", "route": "openai/gpt-5.5"},
+    {"alias": "claude-opus-5", "route": "anthropic/claude-opus-5"},
+    {"alias": "gemini-3.1-pro-preview", "route": "google/gemini-3.1-pro-preview"},
+    {"alias": "deepseek-v4-flash", "route": "deepseek/deepseek-v4-flash-0731"},
+    {"alias": "deepseek-v3.2", "route": "deepseek/deepseek-v3.2"},
+    {"alias": "gpt-oss-120b", "route": "openai/gpt-oss-120b"}
+  ],
+  "judges": [
+    "gpt-5.5",
+    "claude-opus-5",
+    "gemini-3.1-pro-preview",
+    "deepseek-v4-flash",
+    "deepseek-v3.2",
+    "gpt-oss-120b"
+  ]
+}

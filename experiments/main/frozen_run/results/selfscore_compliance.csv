@@ -1,0 +1,5 @@
+generator,n,with_any_score,with_5plus_scores,mean_score_tags,score_leak_after_strip
+claude-opus-5.5,100,100,100,7.51,0
+deepseek-v4.1-flash,100,100,100,7.13,0
+gemini-3.1-pro-preview,100,100,100,6.58,0
+gpt-5.6-sol,100,100,100,6.05,0

@@ -1,0 +1,198 @@
+﻿job_id,attempt_no,prompt_id,generator,judge,orientation,max_tokens,reasoning_effort,success,error,provider_reported,finish_reason,visible_response,completion_tokens,reasoning_tokens,created_at
+c29869f478f75e200f18cab9,1,ru002,claude-opus-5.5,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,A,162,159,1791183521.549362
+2c5602e458369abaff4d612f,1,ru012,deepseek-v4.1-flash,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,A,5,0,1791183522.1910405
+5a6c0c5d11c040de91c43b8e,1,ru020,deepseek-v4.1-flash,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,A,493,490,1791183522.7084618
+48d42e553469a9728635ecb5,1,ru011,gemini-3.1-pro-preview,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,486,483,1791183522.8061674
+16334bc50b4b5ce4de5476a2,1,ru013,gpt-5.6-sol,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,63,56,1791183523.360984
+460b5f8f7424c6381d5a3d37,1,ru017,gpt-5.6-sol,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,891,888,1791183523.640601
+a759d8486a9c1b8eadf92aca,1,ru002,claude-opus-5.5,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,190,187,1791183523.6974669
+7434aa07d7bed04534bb61cd,1,ru024,deepseek-v4.1-flash,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,5,0,1791183524.405126
+f46617c603dd392ec28a94cf,1,ru021,gpt-5.6-sol,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,152,149,1791183524.6004603
+64ef2d543c5c69faec23744b,1,ru017,gpt-5.6-sol,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,123,120,1791183524.870451
+053d601f4244fbf98b29c596,1,ru012,deepseek-v4.1-flash,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,3,0,1791183524.9664314
+715a26d2ad0b33affc2ebc58,1,ru013,gpt-5.6-sol,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,289,286,1791183525.0340226
+919cb86e1f86bc0b2daf4893,1,ru006,claude-opus-5.5,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,204,197,1791183525.1250596
+99c301e4677cd6ec8259e3c0,1,ru012,deepseek-v4.1-flash,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,80,77,1791183525.1930323
+1366ac6029829f3a9fb95890,1,ru010,claude-opus-5.5,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,TIE,382,380,1791183525.7540383
+2c5c97c2e1ff38ffaed29a1a,1,ru017,gpt-5.6-sol,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,133,126,1791183525.8734894
+d8001ed6450deb71df4d7523,1,ru022,claude-opus-5.5,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,3,0,1791183526.654153
+c599a0bbfe29e4b7963ac715,1,ru011,gemini-3.1-pro-preview,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,TIE,488,486,1791183526.873236
+c66378e66f0df8d47e86599b,1,ru019,gemini-3.1-pro-preview,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,55,48,1791183526.8960586
+e2578f463c4d2cd8ab86aebc,1,ru023,gemini-3.1-pro-preview,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,A,57,50,1791183527.1436887
+9575912690097972ee2b9c3d,1,ru008,deepseek-v4.1-flash,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,158,155,1791183527.5684538
+e76ca7f13ca58a9d8fba4e5f,1,ru023,gemini-3.1-pro-preview,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,A,659,658,1791183528.1005263
+fcc32c44b4f8cdc5bcd8e74e,1,ru021,gpt-5.6-sol,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,399,396,1791183528.6247866
+1b3c32c07e42326142ef9b63,1,ru024,deepseek-v4.1-flash,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,119,116,1791183528.979008
+c6d528492ddc59c4fc3dd838,1,ru020,deepseek-v4.1-flash,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,96,89,1791183529.5450764
+496e9554fe3754330b287f56,1,ru005,gpt-5.6-sol,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,A,151,148,1791183530.424771
+bf9380935868e0c461ce9098,1,ru004,deepseek-v4.1-flash,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,B,337,336,1791183530.5192313
+8e5c4c235c1a7bc2f514a2bd,1,ru003,gemini-3.1-pro-preview,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,94,91,1791183530.975633
+729a568ef2f80ea1782bcac9,1,ru004,deepseek-v4.1-flash,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,3,0,1791183531.1143608
+afa9f4abb2b85b07274c7fd3,1,ru001,gpt-5.6-sol,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,B,160,159,1791183531.3163643
+94c292576ce278cda313bcc7,1,ru020,deepseek-v4.1-flash,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,B,490,489,1791183531.5922296
+951612d633d1bd46e1d50cbf,1,ru013,gpt-5.6-sol,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,B,571,570,1791183532.3869975
+53fee9eb21192685d3f50b45,1,ru015,gemini-3.1-pro-preview,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,A,3,0,1791183532.7536156
+b4262531249dc57088a74371,1,ru018,claude-opus-5.5,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,61,54,1791183532.9231768
+b5930fd7788ddc30f9af1d0c,1,ru021,gpt-5.6-sol,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,321,318,1791183533.2288365
+bd9bf8edee0caa536961fd6c,1,ru006,claude-opus-5.5,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,B,122,119,1791183534.415223
+443e5b0e616d61fcaa84b171,1,ru011,gemini-3.1-pro-preview,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,B,3,0,1791183534.750591
+c539cb6ac41d5b31fedf95a9,1,ru012,deepseek-v4.1-flash,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,5,0,1791183534.9892626
+3df92c5f3ef6b604880982c1,1,ru008,deepseek-v4.1-flash,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,A,259,258,1791183535.8391442
+d3765269092b8858e83c9b66,1,ru007,gemini-3.1-pro-preview,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,B,148,145,1791183536.5188274
+6d5fe592f21e520d123b1abf,1,ru021,gpt-5.6-sol,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,B,339,338,1791183536.7052267
+7e35f44148c9cdaef6a6363e,1,ru004,deepseek-v4.1-flash,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,A,5,0,1791183537.0670393
+1f16d11e5749922ba3b53bda,1,ru013,gpt-5.6-sol,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,A,129,126,1791183537.2797523
+bceeae17001fec00e8de01d4,1,ru024,deepseek-v4.1-flash,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,A,5,0,1791183537.3669224
+13683e61eb35efd8bf3b7956,1,ru009,gpt-5.6-sol,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,139,136,1791183537.5237768
+b9b3e30a6868c5734af1e862,1,ru023,gemini-3.1-pro-preview,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,123,120,1791183538.0157874
+206b57eb85e82e1952a31d74,1,ru011,gemini-3.1-pro-preview,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,A,129,126,1791183538.0524454
+d829e8682748cf1ef63dafef,1,ru011,gemini-3.1-pro-preview,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,TIE,489,487,1791183538.176421
+99ad6ba326b8df32e0469e9f,1,ru004,deepseek-v4.1-flash,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,A,495,494,1791183538.2730117
+67aea3a231c92f541a64cbe7,1,ru023,gemini-3.1-pro-preview,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,A,230,227,1791183538.6292605
+ad909bd00d1e5c6b34e1cf6c,1,ru003,gemini-3.1-pro-preview,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,107,104,1791183538.9018688
+b05f5839427f62e1f4a14215,1,ru001,gpt-5.6-sol,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,3,0,1791183539.654937
+f95e3931603e8594743d00cb,1,ru006,claude-opus-5.5,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,393,390,1791183539.721267
+c1d774de4f2b14905c26e0c1,1,ru009,gpt-5.6-sol,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,83,76,1791183539.8053193
+cf40ac5937e71c88e7c628e7,1,ru015,gemini-3.1-pro-preview,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,B,3,0,1791183539.8857267
+5cbb7678bb053218b2b4e92f,1,ru015,gemini-3.1-pro-preview,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,A,282,279,1791183539.949194
+455e82828543a6681987ed37,1,ru022,claude-opus-5.5,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,A,183,180,1791183539.9787104
+4dc253c7adf6817eb8f404f1,1,ru019,gemini-3.1-pro-preview,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,39,32,1791183540.0051253
+0a3d0bb21b15b8f3ffa39a85,1,ru006,claude-opus-5.5,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,74,67,1791183540.2352946
+d61c5a7270d5eee9eab2d054,1,ru014,claude-opus-5.5,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,75,72,1791183540.7506254
+674b3dba885c618809a7dbf6,1,ru004,deepseek-v4.1-flash,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,5,0,1791183541.6732407
+b02e14dbcb52feaec88c88e4,1,ru001,gpt-5.6-sol,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,5,0,1791183542.1154006
+bb757fea29753b1195e2e8c3,1,ru007,gemini-3.1-pro-preview,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,951,948,1791183543.0313134
+2d7656cf1bcd50f042d4662f,1,ru006,claude-opus-5.5,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,TIE,413,411,1791183543.124101
+9054db7d0025e78dcc84e727,1,ru008,deepseek-v4.1-flash,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,5,0,1791183543.69554
+657922696fd4028f6e9e2597,1,ru022,claude-opus-5.5,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,184,177,1791183543.8155544
+47fb31ae7f9277d809fa4858,1,ru016,deepseek-v4.1-flash,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,147,144,1791183544.0034313
+7f6888dc76b29674573bafab,1,ru017,gpt-5.6-sol,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,A,439,438,1791183544.0272598
+d67c0560091230ac5505387e,1,ru007,gemini-3.1-pro-preview,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,79,72,1791183544.0565197
+babda40578954983ac9faeda,1,ru014,claude-opus-5.5,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,B,662,661,1791183544.0572662
+4293b2176ae49a19bdd2b91c,1,ru001,gpt-5.6-sol,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,A,132,129,1791183544.2338417
+a31e16ccaab2a2ec79d45e09,1,ru007,gemini-3.1-pro-preview,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,154,151,1791183544.3336616
+34140b42078150b5947949fc,1,ru006,claude-opus-5.5,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,A,185,182,1791183544.7920218
+59da97f6dcd434bfeb8c98c3,1,ru005,gpt-5.6-sol,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,A,187,184,1791183545.2848291
+9308be0842930ffa4730e193,1,ru003,gemini-3.1-pro-preview,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,B,819,818,1791183545.7776558
+54f85ae67f2f2b8464bdf622,1,ru004,deepseek-v4.1-flash,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,118,115,1791183546.0766342
+3edcd4c2d8b7fb9c0b4a4162,1,ru019,gemini-3.1-pro-preview,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,313,310,1791183546.3119938
+63558b64f961ac2fe2964763,1,ru014,claude-opus-5.5,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,35,28,1791183546.3921611
+87eb080c317187314761bd83,1,ru004,deepseek-v4.1-flash,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,3,0,1791183546.393041
+4ce5615211a36560fa804f1b,1,ru002,claude-opus-5.5,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,B,257,256,1791183546.8651059
+28662e26e11901b85bf5cb01,1,ru017,gpt-5.6-sol,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,A,80,73,1791183547.0513554
+1373e53e2e5773e96b26f9c2,1,ru019,gemini-3.1-pro-preview,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,184,181,1791183547.3356133
+5c8230fea21b99d62279819f,1,ru017,gpt-5.6-sol,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,3,0,1791183547.6896777
+9126f1d3e10dab50076be0d9,1,ru009,gpt-5.6-sol,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,A,354,351,1791183548.2203045
+4ed4938c63a0b55c923e7d0e,1,ru016,deepseek-v4.1-flash,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,416,413,1791183548.2238603
+9f69aaf3389ccb35ecef4e08,1,ru020,deepseek-v4.1-flash,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,A,391,388,1791183548.607504
+12302c42ad123d047d063e41,1,ru012,deepseek-v4.1-flash,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,B,444,443,1791183548.9619405
+2e08ed74821a47c9232bd5d4,1,ru008,deepseek-v4.1-flash,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,B,226,225,1791183549.4382708
+0d5f401b9a05f4c9cf1f5003,1,ru011,gemini-3.1-pro-preview,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,59,52,1791183549.6349466
+48711c76a72b129ba15ec25a,1,ru015,gemini-3.1-pro-preview,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,62,55,1791183549.7637644
+96bad24d67469fd5de74fc24,1,ru019,gemini-3.1-pro-preview,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,B,571,570,1791183549.9560466
+790877aea43f040804644ba5,1,ru024,deepseek-v4.1-flash,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,A,3,0,1791183550.1330562
+c2aca1fecadea8bd768392cc,1,ru013,gpt-5.6-sol,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,A,5,0,1791183550.1992693
+13b3e4bfb70daffb55b9ffd6,1,ru014,claude-opus-5.5,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,122,119,1791183551.0036411
+a2d7f67dfcd0e9cdc712dbb1,1,ru005,gpt-5.6-sol,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,A,66,59,1791183552.39183
+c8026e8f7f6e061b326e2796,1,ru010,claude-opus-5.5,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,B,89,86,1791183552.6966288
+f0b9801286a4de5e8fd504cb,1,ru009,gpt-5.6-sol,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,TIE,472,470,1791183553.183289
+db7720a6962bade70bcbc121,1,ru018,claude-opus-5.5,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,A,119,112,1791183553.4353797
+fe5b7ba57b718ce5db05c46d,1,ru008,deepseek-v4.1-flash,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,A,49,42,1791183553.4673827
+8e67e6d74cc579447cb8b7c1,1,ru018,claude-opus-5.5,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,TIE,319,317,1791183553.8075142
+b24f958058cf3a2dd819103d,1,ru011,gemini-3.1-pro-preview,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,A,190,187,1791183554.8536198
+f9b38c7b94581b5b40fcb620,1,ru018,claude-opus-5.5,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,TIE,456,454,1791183555.180241
+df2efdbcaf1d02455aa7a418,1,ru010,claude-opus-5.5,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,363,360,1791183555.297806
+4ad6e26dbca779a357eb56ea,1,ru003,gemini-3.1-pro-preview,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,A,555,554,1791183555.3972108
+7524aaa25f9140e913a93f89,1,ru020,deepseek-v4.1-flash,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,3,0,1791183555.5730565
+2e987cf8bab42a132a293abf,1,ru014,claude-opus-5.5,deepseek-v4.1-flash,1,1024,low,0,empty visible content (finish_reason='length'),Together,length,,1024,1024,1791183556.3759015
+2c042749ad74818a332a21a7,1,ru001,gpt-5.6-sol,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,80,77,1791183556.5314124
+ed61d156ef7c539221adc759,1,ru021,gpt-5.6-sol,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,A,126,119,1791183556.5328355
+29495a4a33272d521176bfb0,1,ru019,gemini-3.1-pro-preview,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,A,357,354,1791183556.7738483
+21002d20a3de00781fc10fea,1,ru022,claude-opus-5.5,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,132,129,1791183557.0049448
+b8ee9ad7f13e3e69bfdec62c,1,ru002,claude-opus-5.5,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,A,99,92,1791183558.1895158
+2e987cf8bab42a132a293abf,2,ru014,claude-opus-5.5,deepseek-v4.1-flash,1,8192,low,1,,Together,stop,A,439,436,1791183558.4515195
+cf1019870963b1917874e098,1,ru017,gpt-5.6-sol,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,TIE,339,337,1791183558.6202908
+eff95f4b454217e785671c7f,1,ru005,gpt-5.6-sol,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,43,36,1791183558.8411098
+5627d2c231ea9d614e0b7f07,1,ru013,gpt-5.6-sol,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,B,3,0,1791183558.9744716
+c3bd2f247fe2e3f73fdf52ae,1,ru024,deepseek-v4.1-flash,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,A,214,211,1791183559.401246
+77bce8c98c38b5cda24b7a0a,1,ru015,gemini-3.1-pro-preview,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,TIE,620,618,1791183559.4418614
+ab896325758a546b8dca389f,1,ru014,claude-opus-5.5,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,85,82,1791183560.5475645
+81a99a3ccda910b21ba7e2cb,1,ru020,deepseek-v4.1-flash,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,A,53,46,1791183560.8155684
+135ae20740c6e51590f4775e,1,ru019,gemini-3.1-pro-preview,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,257,254,1791183561.1949897
+320e9df8df8622169d088fe7,1,ru002,claude-opus-5.5,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,5,0,1791183561.1960378
+3a4a74faa22fde961cb187e0,1,ru016,deepseek-v4.1-flash,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,B,597,596,1791183562.1409867
+5b4edea342f3a48d93afd857,1,ru023,gemini-3.1-pro-preview,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,3,0,1791183562.211692
+10cdb2f0beea7d7e7b917441,1,ru009,gpt-5.6-sol,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,"A has more idiomatic flourishes (""есть где развернуться"", ""похудеть"") and a ""Зато..."" upbeat closer. B is plain. Both are fairly similar, though. A uses one-sentence-per-line structure and a positive closing twist; B's closing is a summary ""Так что..."". The difference is marginal, but A's cutesy phrasing reads slightly more like slop, so I lean toward A.
+
+**A**",139,0,1791183562.623231
+b176df7d25c4c86f9521593c,1,ru020,deepseek-v4.1-flash,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,A,685,684,1791183562.7557936
+0d38d66e30e577a2fb83f09c,1,ru022,claude-opus-5.5,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,517,514,1791183563.1389153
+1eeccf61e51b375b465b8cce,1,ru015,gemini-3.1-pro-preview,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,TIE,409,407,1791183563.4106662
+fe8791f2d8b62ff50114e6da,1,ru010,claude-opus-5.5,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,A,3,0,1791183563.7065976
+429dd4469f39b244c9679016,1,ru012,deepseek-v4.1-flash,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,B,371,370,1791183564.9931872
+9cd60dd42da26f3c2a6a93fa,1,ru007,gemini-3.1-pro-preview,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,720,717,1791183565.2101815
+46b49106b3150d3929a2372e,1,ru009,gpt-5.6-sol,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,64,57,1791183565.2362776
+05bdc4c9989762d13ea3551a,1,ru006,claude-opus-5.5,deepseek-v4.1-flash,0,1024,low,0,empty visible content (finish_reason='length'),Together,length,,1024,1024,1791183565.5318177
+dd54e6661d172c65631a8e6a,1,ru010,claude-opus-5.5,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,A,62,55,1791183565.8399742
+96ffb2f471e624a5552404b2,1,ru010,claude-opus-5.5,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,65,58,1791183566.2644482
+1b0fa9b78723c9d4993ff0f3,1,ru001,gpt-5.6-sol,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,A,164,163,1791183566.3999119
+4ba1511702c4ee4206626eee,1,ru008,deepseek-v4.1-flash,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,A,185,182,1791183566.4545515
+9f1c4c5b58bd772943c13c38,1,ru005,gpt-5.6-sol,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,246,243,1791183566.7167444
+82515154520f56caee935913,1,ru017,gpt-5.6-sol,deepseek-v4.1-flash,1,1024,low,0,empty visible content (finish_reason='length'),Together,length,,1024,1024,1791183567.0984216
+fa3d7d4f9eb08e5770a8eded,1,ru013,gpt-5.6-sol,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,TIE,544,542,1791183567.3716133
+d0ecb6787872e7836c6c65af,1,ru010,claude-opus-5.5,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,TIE,303,301,1791183567.518072
+fe9774f5e46503b8841723d8,1,ru005,gpt-5.6-sol,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,B,97,94,1791183568.3891647
+f3ad1f1fab3cf669e19d6c5c,1,ru015,gemini-3.1-pro-preview,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,A,78,71,1791183568.9461002
+82515154520f56caee935913,2,ru017,gpt-5.6-sol,deepseek-v4.1-flash,1,8192,low,1,,Together,stop,A,422,419,1791183569.0431378
+174003c6d240826294fcd275,1,ru001,gpt-5.6-sol,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,A,49,42,1791183569.0964196
+762513ec7aef735fdda4caa4,1,ru002,claude-opus-5.5,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,B,3,0,1791183569.529674
+e1caa396715c157f3135c05d,1,ru015,gemini-3.1-pro-preview,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,374,371,1791183570.4549737
+99573a801ce13239659a5965,1,ru018,claude-opus-5.5,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,3,0,1791183570.6699805
+a72048ee6a0ba7518930fc15,1,ru016,deepseek-v4.1-flash,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,303,300,1791183570.875228
+6edefc23676fe73cb465f245,1,ru008,deepseek-v4.1-flash,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,B,3,0,1791183571.2201304
+d21f42bd7dc7715d96e4a0d4,1,ru016,deepseek-v4.1-flash,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,B,242,241,1791183571.2996166
+d41efbf0297f43d9f8295b02,1,ru020,deepseek-v4.1-flash,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,174,171,1791183571.3627155
+9501d13111db7c85fa35152f,1,ru004,deepseek-v4.1-flash,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,A,199,196,1791183571.9429443
+dadc74d536a38c62e784b036,1,ru009,gpt-5.6-sol,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,120,117,1791183572.1340163
+0db262f22173f61ca2bcd0bd,1,ru005,gpt-5.6-sol,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,A,604,603,1791183572.3647246
+8dd41f3d5fbe78e24d76d3d1,1,ru021,gpt-5.6-sol,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,78,71,1791183572.6455
+f5e0c4f1ef83ab9912005cb1,1,ru007,gemini-3.1-pro-preview,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,TIE,494,492,1791183572.8044662
+a74f8797f600a212165ef8da,1,ru022,claude-opus-5.5,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,TIE,356,354,1791183573.157408
+d7014e40a9050f187a7efecd,1,ru022,claude-opus-5.5,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,70,63,1791183573.4522657
+52f755244afd9016df7ebd82,1,ru003,gemini-3.1-pro-preview,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,135,132,1791183573.5878148
+95d89f8600b54b3f35568509,1,ru024,deepseek-v4.1-flash,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,A,262,259,1791183573.8707013
+05bdc4c9989762d13ea3551a,2,ru006,claude-opus-5.5,deepseek-v4.1-flash,0,8192,low,1,,Together,stop,B,2929,2926,1791183574.1622875
+acd974f11b5b3bd2878300b2,1,ru021,gpt-5.6-sol,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,690,687,1791183574.4208245
+2b8d5520a6719d5ae72f61a3,1,ru003,gemini-3.1-pro-preview,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,B,76,69,1791183575.089134
+6238fdcfd67c2c4375983b75,1,ru001,gpt-5.6-sol,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,134,131,1791183575.2054584
+dfcd54e58c63dbd9bc8fbbb9,1,ru003,gemini-3.1-pro-preview,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,5,0,1791183575.8339405
+0b47a3ce51976d303a2247bb,1,ru012,deepseek-v4.1-flash,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,A,128,125,1791183575.8584378
+19443dfe9e0d551c6164bb5a,1,ru018,claude-opus-5.5,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,B,605,602,1791183575.8881
+f3df3b175845733b37ab0e88,1,ru024,deepseek-v4.1-flash,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,B,337,336,1791183575.9204695
+8970479e4f2dc3b789df4888,1,ru005,gpt-5.6-sol,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,B,216,215,1791183576.3336103
+1b3799f0292b7524c5155181,1,ru007,gemini-3.1-pro-preview,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,79,72,1791183577.6737232
+6e2badc9e48d91541b7361b1,1,ru007,gemini-3.1-pro-preview,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,TIE,503,501,1791183577.7865427
+34a5aa1788914618addbde67,1,ru008,deepseek-v4.1-flash,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,A,3,0,1791183578.281194
+9eb43b98e539e13775ae6c30,1,ru023,gemini-3.1-pro-preview,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,5,0,1791183578.6113334
+ab064c6bd822260a8d808369,1,ru022,claude-opus-5.5,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,TIE,457,455,1791183578.7486227
+7f1cc801af83af9b8139c61d,1,ru018,claude-opus-5.5,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,B,180,177,1791183578.8001728
+4a1bb8901b8239b99cfc7bdc,1,ru011,gemini-3.1-pro-preview,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,A,98,91,1791183579.4743407
+d62395594360be1200fe26ea,1,ru021,gpt-5.6-sol,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,TIE,245,243,1791183580.0504327
+a00cdd1e1e9d3a73a26970be,1,ru010,claude-opus-5.5,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,A,617,614,1791183580.1342332
+ba25284c285bcf21eaf5fa86,1,ru003,gemini-3.1-pro-preview,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,A,134,131,1791183580.250851
+d2da6be28558e354b6153818,1,ru002,claude-opus-5.5,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,A,94,91,1791183580.280197
+4e716d9dc3353d082b6e9028,1,ru016,deepseek-v4.1-flash,gpt-5.6-sol,1,1024,low,1,,OpenAI,stop,B,5,0,1791183580.3307934
+66d3dc11560a906aabf54df2,1,ru016,deepseek-v4.1-flash,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,A,130,123,1791183580.8006592
+ddf81fc7eb264d3eb93edc14,1,ru012,deepseek-v4.1-flash,deepseek-v4.1-flash,0,1024,low,1,,Together,stop,A,111,108,1791183581.0706723
+09f0ad6dafd2270f3e5dce26,1,ru018,claude-opus-5.5,deepseek-v4.1-flash,1,1024,low,1,,Together,stop,B,713,710,1791183581.418157
+6529bcb7bd36571b895bdcf8,1,ru006,claude-opus-5.5,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,TIE,504,502,1791183581.6064625
+006182483fa023a7b9a42a9d,1,ru014,claude-opus-5.5,gpt-5.6-sol,0,1024,low,1,,OpenAI,stop,A,69,62,1791183582.2515273
+1a5e2eba42c674c923fda789,1,ru024,deepseek-v4.1-flash,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,A,385,384,1791183582.6728544
+12320a7d110c4279833cb844,1,ru013,gpt-5.6-sol,claude-opus-5.5,0,1024,low,1,,Anthropic,stop,A,109,106,1791183583.6489062
+2d150097f2bab481afe4c1c4,1,ru014,claude-opus-5.5,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,TIE,383,381,1791183584.5053504
+cdb408daee89e7e72d68b36d,1,ru016,deepseek-v4.1-flash,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,180,177,1791183584.5620718
+46180e29e502be3d24a36b51,1,ru009,gpt-5.6-sol,gemini-3.1-pro-preview,0,1024,low,1,,Google AI Studio,stop,TIE,630,628,1791183584.7310781
+ddc66351b8a2b8bc34161896,1,ru023,gemini-3.1-pro-preview,claude-opus-5.5,1,1024,low,1,,Anthropic,stop,A,3,0,1791183584.8553026
+bd9e2cf6df0a37e3e46ba870,1,ru002,claude-opus-5.5,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,A,301,300,1791183586.1194112
+c9640a2d4f300860b10d1186,1,ru023,gemini-3.1-pro-preview,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,B,320,319,1791183588.7067902
+9714425429a94e176e868e5b,1,ru019,gemini-3.1-pro-preview,gemini-3.1-pro-preview,1,1024,low,1,,Google AI Studio,stop,TIE,737,735,1791183590.8206158

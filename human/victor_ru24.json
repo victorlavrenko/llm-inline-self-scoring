@@ -1,0 +1,33 @@
+{
+  "schema": "selfscore-ru-human-v1",
+  "study": "ru24-53e942648ca6",
+  "evaluator_id": "Victor",
+  "started_at": "2026-10-05T07:27:50.511Z",
+  "completed_at": "2026-10-05T07:42:43.759Z",
+  "responses": [
+    {"ordinal":1,"prompt_id":"ru005","domain":"history","generator":"gpt-5.6-sol","choice":"B","a_source":"selfscore","b_source":"baseline","preferred_source":"baseline"},
+    {"ordinal":2,"prompt_id":"ru006","domain":"history","generator":"claude-opus-5.5","choice":"TIE","a_source":"baseline","b_source":"selfscore","preferred_source":"tie"},
+    {"ordinal":3,"prompt_id":"ru007","domain":"history","generator":"gemini-3.1-pro-preview","choice":"B","a_source":"baseline","b_source":"selfscore","preferred_source":"selfscore"},
+    {"ordinal":4,"prompt_id":"ru002","domain":"science","generator":"claude-opus-5.5","choice":"B","a_source":"baseline","b_source":"selfscore","preferred_source":"selfscore"},
+    {"ordinal":5,"prompt_id":"ru010","domain":"technology","generator":"claude-opus-5.5","choice":"TIE","a_source":"baseline","b_source":"selfscore","preferred_source":"tie"},
+    {"ordinal":6,"prompt_id":"ru015","domain":"everyday","generator":"gemini-3.1-pro-preview","choice":"A","a_source":"baseline","b_source":"selfscore","preferred_source":"baseline"},
+    {"ordinal":7,"prompt_id":"ru020","domain":"culture_language","generator":"deepseek-v4.1-flash","choice":"TIE","a_source":"selfscore","b_source":"baseline","preferred_source":"tie"},
+    {"ordinal":8,"prompt_id":"ru004","domain":"science","generator":"deepseek-v4.1-flash","choice":"B","a_source":"baseline","b_source":"selfscore","preferred_source":"selfscore"},
+    {"ordinal":9,"prompt_id":"ru021","domain":"economics_psychology","generator":"gpt-5.6-sol","choice":"TIE","a_source":"baseline","b_source":"selfscore","preferred_source":"tie"},
+    {"ordinal":10,"prompt_id":"ru017","domain":"culture_language","generator":"gpt-5.6-sol","choice":"TIE","a_source":"baseline","b_source":"selfscore","preferred_source":"tie"},
+    {"ordinal":11,"prompt_id":"ru009","domain":"technology","generator":"gpt-5.6-sol","choice":"TIE","a_source":"baseline","b_source":"selfscore","preferred_source":"tie"},
+    {"ordinal":12,"prompt_id":"ru011","domain":"technology","generator":"gemini-3.1-pro-preview","choice":"A","a_source":"selfscore","b_source":"baseline","preferred_source":"selfscore"},
+    {"ordinal":13,"prompt_id":"ru022","domain":"economics_psychology","generator":"claude-opus-5.5","choice":"A","a_source":"selfscore","b_source":"baseline","preferred_source":"selfscore"},
+    {"ordinal":14,"prompt_id":"ru014","domain":"everyday","generator":"claude-opus-5.5","choice":"A","a_source":"baseline","b_source":"selfscore","preferred_source":"baseline"},
+    {"ordinal":15,"prompt_id":"ru013","domain":"everyday","generator":"gpt-5.6-sol","choice":"TIE","a_source":"baseline","b_source":"selfscore","preferred_source":"tie"},
+    {"ordinal":16,"prompt_id":"ru001","domain":"science","generator":"gpt-5.6-sol","choice":"TIE","a_source":"baseline","b_source":"selfscore","preferred_source":"tie"},
+    {"ordinal":17,"prompt_id":"ru016","domain":"everyday","generator":"deepseek-v4.1-flash","choice":"TIE","a_source":"selfscore","b_source":"baseline","preferred_source":"tie"},
+    {"ordinal":18,"prompt_id":"ru019","domain":"culture_language","generator":"gemini-3.1-pro-preview","choice":"B","a_source":"baseline","b_source":"selfscore","preferred_source":"selfscore"},
+    {"ordinal":19,"prompt_id":"ru018","domain":"culture_language","generator":"claude-opus-5.5","choice":"B","a_source":"selfscore","b_source":"baseline","preferred_source":"baseline"},
+    {"ordinal":20,"prompt_id":"ru012","domain":"technology","generator":"deepseek-v4.1-flash","choice":"TIE","a_source":"baseline","b_source":"selfscore","preferred_source":"tie"},
+    {"ordinal":21,"prompt_id":"ru024","domain":"economics_psychology","generator":"deepseek-v4.1-flash","choice":"B","a_source":"selfscore","b_source":"baseline","preferred_source":"baseline"},
+    {"ordinal":22,"prompt_id":"ru003","domain":"science","generator":"gemini-3.1-pro-preview","choice":"B","a_source":"baseline","b_source":"selfscore","preferred_source":"selfscore"},
+    {"ordinal":23,"prompt_id":"ru008","domain":"history","generator":"deepseek-v4.1-flash","choice":"TIE","a_source":"baseline","b_source":"selfscore","preferred_source":"tie"},
+    {"ordinal":24,"prompt_id":"ru023","domain":"economics_psychology","generator":"gemini-3.1-pro-preview","choice":"TIE","a_source":"selfscore","b_source":"baseline","preferred_source":"tie"}
+  ]
+}

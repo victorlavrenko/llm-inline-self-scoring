@@ -1,0 +1,42 @@
+{
+  "screen_protocol": "v1 smoke, two frozen prompts selected by the same --cases 2 deterministic sampler; treatment required sentence-level <AI SCORE: n> tags.",
+  "excluded_before_v1.2_candidate_screen": [
+    {
+      "alias": "llama-3.3-70b-instruct",
+      "route": "meta-llama/llama-3.3-70b-instruct",
+      "observed_score_counts": [
+        0,
+        1
+      ],
+      "reason": "ignored sentence-level scoring; at most one final whole-answer score"
+    },
+    {
+      "alias": "ministral-14b-2512",
+      "route": "mistralai/ministral-14b-2512",
+      "observed_score_counts": [
+        1,
+        1
+      ],
+      "reason": "one score appended after the whole post"
+    },
+    {
+      "alias": "nemotron-3.5-lightning",
+      "route": "nvidia/nemotron-3.5-lightning",
+      "observed_score_counts": [
+        1,
+        1
+      ],
+      "reason": "one score appended after the whole post"
+    },
+    {
+      "alias": "qwen3-30b-a3b-instruct-2507",
+      "route": "qwen/qwen3-30b-a3b-instruct-2507",
+      "observed_score_counts": [
+        1,
+        8
+      ],
+      "reason": "one final score on one prompt; all scores clustered at the end on the other, not interleaved"
+    }
+  ],
+  "raw_artifacts": "prior_screen_v1/ contains the original smoke database and exported generations/judgments."
+}

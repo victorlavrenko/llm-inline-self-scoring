@@ -1,0 +1,69 @@
+{
+  "selection_id": "breadth-20261006-v1",
+  "method": "For each of the 10 frozen domains, rank prompts by SHA256(selection_id|domain|prompt_id) and take the first two. No outcome data are consulted.",
+  "n": 20,
+  "prompt_ids": [
+    "p086",
+    "p087",
+    "p028",
+    "p025",
+    "p046",
+    "p045",
+    "p063",
+    "p069",
+    "p054",
+    "p052",
+    "p001",
+    "p005",
+    "p077",
+    "p075",
+    "p094",
+    "p091",
+    "p013",
+    "p015",
+    "p032",
+    "p034"
+  ],
+  "by_domain": {
+    "arts_culture": [
+      "p086",
+      "p087"
+    ],
+    "biology_medicine": [
+      "p028",
+      "p025"
+    ],
+    "economics": [
+      "p046",
+      "p045"
+    ],
+    "food_culture": [
+      "p063",
+      "p069"
+    ],
+    "geography": [
+      "p054",
+      "p052"
+    ],
+    "history": [
+      "p001",
+      "p005"
+    ],
+    "language": [
+      "p077",
+      "p075"
+    ],
+    "misconceptions": [
+      "p094",
+      "p091"
+    ],
+    "science": [
+      "p013",
+      "p015"
+    ],
+    "technology": [
+      "p032",
+      "p034"
+    ]
+  }
+}

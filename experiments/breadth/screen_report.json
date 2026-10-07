@@ -1,0 +1,674 @@
+{
+  "criteria": {
+    "protocol": "two frozen prompts; both arms generated; selfscore must have >=5 tags, no leak, >=0.75 prose-interleaving ratio, provider match",
+    "candidate_count": 24,
+    "pass_count": 20,
+    "failed_count": 4,
+    "outcome_blind": true
+  },
+  "results": [
+    {
+      "alias": "minimax-m3",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Minimax",
+          "selfscore_provider": "Minimax"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 8,
+          "score_leak": false,
+          "gaps": 7,
+          "textual_gaps": 7,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Minimax",
+          "selfscore_provider": "Minimax"
+        }
+      ]
+    },
+    {
+      "alias": "qwen3.7-flash",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Alibaba",
+          "selfscore_provider": "Alibaba"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Alibaba",
+          "selfscore_provider": "Alibaba"
+        }
+      ]
+    },
+    {
+      "alias": "kimi-k2.5",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "SiliconFlow",
+          "selfscore_provider": "SiliconFlow"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "SiliconFlow",
+          "selfscore_provider": "SiliconFlow"
+        }
+      ]
+    },
+    {
+      "alias": "gpt-oss-120b",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        }
+      ]
+    },
+    {
+      "alias": "gemma-3-12b-it",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        }
+      ]
+    },
+    {
+      "alias": "glm-5.3-flash",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Novita",
+          "selfscore_provider": "Novita"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 8,
+          "score_leak": false,
+          "gaps": 7,
+          "textual_gaps": 7,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Novita",
+          "selfscore_provider": "Novita"
+        }
+      ]
+    },
+    {
+      "alias": "deepseek-v3.2",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 8,
+          "score_leak": false,
+          "gaps": 7,
+          "textual_gaps": 7,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        }
+      ]
+    },
+    {
+      "alias": "grok-4.7",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "xAI",
+          "selfscore_provider": "xAI"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "xAI",
+          "selfscore_provider": "xAI"
+        }
+      ]
+    },
+    {
+      "alias": "deepseek-v4.1-flash",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        }
+      ]
+    },
+    {
+      "alias": "deepseek-v4-flash-0731",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "StreamLake",
+          "selfscore_provider": "StreamLake"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "StreamLake",
+          "selfscore_provider": "StreamLake"
+        }
+      ]
+    },
+    {
+      "alias": "mistral-small-2603",
+      "pass": false,
+      "reasons": [
+        "p025: only 1 valid score tags (<5)",
+        "p025: interleaving ratio 0.00 < 0.75"
+      ],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 1,
+          "score_leak": false,
+          "gaps": 0,
+          "textual_gaps": 0,
+          "interleaving_ratio": 0.0,
+          "baseline_provider": "Mistral",
+          "selfscore_provider": "Mistral"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 5,
+          "score_leak": false,
+          "gaps": 4,
+          "textual_gaps": 4,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Mistral",
+          "selfscore_provider": "Mistral"
+        }
+      ]
+    },
+    {
+      "alias": "ling-3.0-flash",
+      "pass": false,
+      "reasons": [
+        "p046: only 1 valid score tags (<5)",
+        "p046: interleaving ratio 0.00 < 0.75"
+      ],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Novita",
+          "selfscore_provider": "Novita"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 1,
+          "score_leak": false,
+          "gaps": 0,
+          "textual_gaps": 0,
+          "interleaving_ratio": 0.0,
+          "baseline_provider": "Novita",
+          "selfscore_provider": "Novita"
+        }
+      ]
+    },
+    {
+      "alias": "minimax-m2.5",
+      "pass": false,
+      "reasons": [
+        "p025: only 0 valid score tags (<5)",
+        "p025: interleaving ratio 0.00 < 0.75",
+        "p046: only 0 valid score tags (<5)",
+        "p046: interleaving ratio 0.00 < 0.75"
+      ],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 0,
+          "score_leak": false,
+          "gaps": 0,
+          "textual_gaps": 0,
+          "interleaving_ratio": 0.0,
+          "baseline_provider": "Minimax",
+          "selfscore_provider": "Minimax"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 0,
+          "score_leak": false,
+          "gaps": 0,
+          "textual_gaps": 0,
+          "interleaving_ratio": 0.0,
+          "baseline_provider": "Minimax",
+          "selfscore_provider": "Minimax"
+        }
+      ]
+    },
+    {
+      "alias": "glm-5.3",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        }
+      ]
+    },
+    {
+      "alias": "qwen3.8-flash",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Alibaba",
+          "selfscore_provider": "Alibaba"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Alibaba",
+          "selfscore_provider": "Alibaba"
+        }
+      ]
+    },
+    {
+      "alias": "qwen3.8-27b",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 5,
+          "score_leak": false,
+          "gaps": 4,
+          "textual_gaps": 4,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        }
+      ]
+    },
+    {
+      "alias": "qwen3.5-35b-a3b",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 14,
+          "score_leak": false,
+          "gaps": 13,
+          "textual_gaps": 13,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        }
+      ]
+    },
+    {
+      "alias": "qwen3.5-397b-a17b",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Alibaba",
+          "selfscore_provider": "Alibaba"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Alibaba",
+          "selfscore_provider": "Alibaba"
+        }
+      ]
+    },
+    {
+      "alias": "mimo-v2.6-flash",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Xiaomi",
+          "selfscore_provider": "Xiaomi"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Xiaomi",
+          "selfscore_provider": "Xiaomi"
+        }
+      ]
+    },
+    {
+      "alias": "hy4-preview",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "SiliconFlow",
+          "selfscore_provider": "SiliconFlow"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "SiliconFlow",
+          "selfscore_provider": "SiliconFlow"
+        }
+      ]
+    },
+    {
+      "alias": "nemotron-3-ultra",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "BaseTen",
+          "selfscore_provider": "BaseTen"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "BaseTen",
+          "selfscore_provider": "BaseTen"
+        }
+      ]
+    },
+    {
+      "alias": "command-a-plus",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Cohere",
+          "selfscore_provider": "Cohere"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 6,
+          "score_leak": false,
+          "gaps": 5,
+          "textual_gaps": 5,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Cohere",
+          "selfscore_provider": "Cohere"
+        }
+      ]
+    },
+    {
+      "alias": "llama-4-maverick",
+      "pass": true,
+      "reasons": [],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Novita",
+          "selfscore_provider": "Novita"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 7,
+          "score_leak": false,
+          "gaps": 6,
+          "textual_gaps": 6,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "Novita",
+          "selfscore_provider": "Novita"
+        }
+      ]
+    },
+    {
+      "alias": "phi-4",
+      "pass": false,
+      "reasons": [
+        "p025: only 2 valid score tags (<5)",
+        "p046: only 1 valid score tags (<5)",
+        "p046: interleaving ratio 0.00 < 0.75"
+      ],
+      "prompts": [
+        {
+          "prompt_id": "p025",
+          "score_count": 2,
+          "score_leak": false,
+          "gaps": 1,
+          "textual_gaps": 1,
+          "interleaving_ratio": 1.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        },
+        {
+          "prompt_id": "p046",
+          "score_count": 1,
+          "score_leak": false,
+          "gaps": 0,
+          "textual_gaps": 0,
+          "interleaving_ratio": 0.0,
+          "baseline_provider": "DeepInfra",
+          "selfscore_provider": "DeepInfra"
+        }
+      ]
+    }
+  ]
+}

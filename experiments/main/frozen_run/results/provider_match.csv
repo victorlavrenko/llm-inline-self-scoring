@@ -1,0 +1,5 @@
+generator,pairs,same_provider,unknown_provider,same_provider_rate
+claude-opus-5.5,100,100,0,1.0
+deepseek-v4.1-flash,100,100,0,1.0
+gemini-3.1-pro-preview,100,100,0,1.0
+gpt-5.6-sol,100,100,0,1.0
