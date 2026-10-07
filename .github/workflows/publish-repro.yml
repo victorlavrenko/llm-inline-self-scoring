@@ -27,7 +27,15 @@ jobs:
             echo "Full archive is already assembled."
             exit 0
           fi
-          cat artifacts/parts/full-repro-v9.part-*.b64 | tr -d '\\r\\n ' | base64 --decode > /tmp/full-repro-v9.tar.xz
+          python - <<'PY'
+          from pathlib import Path
+          import base64, glob, re
+          text = "".join(Path(p).read_text(encoding="utf-8") for p in sorted(glob.glob("artifacts/parts/full-repro-v9.part-*.b64")))
+          clean = re.sub(r"[^A-Za-z0-9+/=]", "", text)
+          data = base64.b64decode(clean, validate=False)
+          Path("/tmp/full-repro-v9.tar.xz").write_bytes(data)
+          print(f"base64 chars={len(clean)} decoded bytes={len(data)}")
+          PY
           echo "0f8ea1cde41415fdc472247736ffc60de116c902aec1d7152d380a3bf1d5ee53  /tmp/full-repro-v9.tar.xz" | sha256sum -c -
 
       - name: Publish repository contents
