@@ -7,113 +7,69 @@
 
 \bibitem[Amit et~al.(2026)Amit, Galil, and El-Yaniv]{amit2026uncertainty}
 Ido Amit, Ido Galil, and Ran El-Yaniv.
-\newblock Evaluating llm uncertainty in long-form generation using
-  deterministic ground truth.
-\newblock In \emph{Proceedings of the 43rd International Conference on Machine
-  Learning}, volume 306 of \emph{Proceedings of Machine Learning Research},
-  pages 2371--2430, 2026.
+\newblock Evaluating llm uncertainty in long-form generation using deterministic ground truth.
+\newblock In \emph{Proceedings of the 43rd International Conference on Machine Learning}, volume 306 of \emph{Proceedings of Machine Learning Research}, pages 2371--2430, 2026.
 \newblock URL \url{https://proceedings.mlr.press/v306/amit26a.html}.
 
 \bibitem[Asai et~al.(2024)Asai, Wu, Wang, Sil, and Hajishirzi]{asai2024selfrag}
 Akari Asai, Zeqiu Wu, Yizhong Wang, Avirup Sil, and Hannaneh Hajishirzi.
-\newblock Self-rag: Learning to retrieve, generate, and critique through
-  self-reflection.
+\newblock Self-rag: Learning to retrieve, generate, and critique through self-reflection.
 \newblock In \emph{International Conference on Learning Representations}, 2024.
 \newblock URL \url{https://openreview.net/forum?id=hSyW5go0v8}.
 
-\bibitem[Calderon et~al.(2025)Calderon, Reichart, and
-  Dror]{calderon2025alternative}
+\bibitem[Calderon et~al.(2025)Calderon, Reichart, and Dror]{calderon2025alternative}
 Nitay Calderon, Roi Reichart, and Rotem Dror.
-\newblock The alternative annotator test for llm-as-a-judge: How to
-  statistically justify replacing human annotators with llms.
-\newblock In \emph{Proceedings of the 63rd Annual Meeting of the Association
-  for Computational Linguistics (Volume 1: Long Papers)}, pages 16051--16081.
-  Association for Computational Linguistics, 2025.
+\newblock The alternative annotator test for llm-as-a-judge: How to statistically justify replacing human annotators with llms.
+\newblock In \emph{Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)}, pages 16051--16081. Association for Computational Linguistics, 2025.
 \newblock \doi{10.18653/v1/2025.acl-long.782}.
 \newblock URL \url{https://aclanthology.org/2025.acl-long.782/}.
 
-\bibitem[Huang et~al.(2024)Huang, Chen, Mishra, Zheng, Yu, Song, and
-  Zhou]{huang2024cannot}
-Jie Huang, Xinyun Chen, Swaroop Mishra, Huaixiu~Steven Zheng, Adams~Wei Yu,
-  Xinying Song, and Denny Zhou.
+\bibitem[Huang et~al.(2024)Huang, Chen, Mishra, Zheng, Yu, Song, and Zhou]{huang2024cannot}
+Jie Huang, Xinyun Chen, Swaroop Mishra, Huaixiu~Steven Zheng, Adams~Wei Yu, Xinying Song, and Denny Zhou.
 \newblock Large language models cannot self-correct reasoning yet.
 \newblock In \emph{International Conference on Learning Representations}, 2024.
-\newblock URL
-  \url{https://proceedings.iclr.cc/paper_files/paper/2024/hash/8b4add8b0aa8749d80a34ca5d941c355-Abstract-Conference.html}.
+\newblock URL \url{https://proceedings.iclr.cc/paper_files/paper/2024/hash/8b4add8b0aa8749d80a34ca5d941c355-Abstract-Conference.html}.
 
-\bibitem[Kadavath et~al.(2022)Kadavath, Conerly, Askell, Henighan, Drain,
-  Perez, Schiefer, Hatfield-Dodds, DasSarma, Tran-Johnson,
-  et~al.]{kadavath2022know}
-Saurav Kadavath, Tom Conerly, Amanda Askell, Tom Henighan, Dawn Drain, Ethan
-  Perez, Nicholas Schiefer, Zac Hatfield-Dodds, Nova DasSarma, Eli
-  Tran-Johnson, et~al.
+\bibitem[Kadavath et~al.(2022)Kadavath, Conerly, Askell, Henighan, Drain, Perez, Schiefer, Hatfield-Dodds, DasSarma, Tran-Johnson, et~al.]{kadavath2022know}
+Saurav Kadavath, Tom Conerly, Amanda Askell, Tom Henighan, Dawn Drain, Ethan Perez, Nicholas Schiefer, Zac Hatfield-Dodds, Nova DasSarma, Eli Tran-Johnson, et~al.
 \newblock Language models (mostly) know what they know.
 \newblock \emph{arXiv preprint arXiv:2207.05221}, 2022.
 \newblock URL \url{https://arxiv.org/abs/2207.05221}.
 
-\bibitem[Kumar et~al.(2025)Kumar, Zhuang, Agarwal, Su, Co-Reyes, Singh, Baumli,
-  Iqbal, Bishop, Roelofs, Zhang, McKinney, Shrivastava, Paduraru, Tucker,
-  Precup, Behbahani, and Faust]{kumar2025score}
-Aviral Kumar, Vincent Zhuang, Rishabh Agarwal, Yi~Su, JD~Co-Reyes, Avi Singh,
-  Kate Baumli, Shariq Iqbal, Colton Bishop, Rebecca Roelofs, Lei Zhang, Kay
-  McKinney, Disha Shrivastava, Cosmin Paduraru, George Tucker, Doina Precup,
-  Feryal Behbahani, and Aleksandra Faust.
+\bibitem[Kumar et~al.(2025)Kumar, Zhuang, Agarwal, Su, Co-Reyes, Singh, Baumli, Iqbal, Bishop, Roelofs, Zhang, McKinney, Shrivastava, Paduraru, Tucker, Precup, Behbahani, and Faust]{kumar2025score}
+Aviral Kumar, Vincent Zhuang, Rishabh Agarwal, Yi~Su, JD~Co-Reyes, Avi Singh, Kate Baumli, Shariq Iqbal, Colton Bishop, Rebecca Roelofs, Lei Zhang, Kay McKinney, Disha Shrivastava, Cosmin Paduraru, George Tucker, Doina Precup, Feryal Behbahani, and Aleksandra Faust.
 \newblock Training language models to self-correct via reinforcement learning.
 \newblock In \emph{International Conference on Learning Representations}, 2025.
-\newblock URL
-  \url{https://proceedings.iclr.cc/paper_files/paper/2025/hash/871ac99fdc5282d0301934d23945ebaa-Abstract-Conference.html}.
+\newblock URL \url{https://proceedings.iclr.cc/paper_files/paper/2025/hash/871ac99fdc5282d0301934d23945ebaa-Abstract-Conference.html}.
 
-\bibitem[Madaan et~al.(2023)Madaan, Tandon, Gupta, Hallinan, Gao, Wiegreffe,
-  Alon, Dziri, Prabhumoye, Yang, Gupta, Majumder, Hermann, Welleck,
-  Yazdanbakhsh, and Clark]{madaan2023selfrefine}
-Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah
-  Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, Shashank
-  Gupta, Bodhisattwa~Prasad Majumder, Katherine Hermann, Sean Welleck, Amir
-  Yazdanbakhsh, and Peter Clark.
+\bibitem[Madaan et~al.(2023)Madaan, Tandon, Gupta, Hallinan, Gao, Wiegreffe, Alon, Dziri, Prabhumoye, Yang, Gupta, Majumder, Hermann, Welleck, Yazdanbakhsh, and Clark]{madaan2023selfrefine}
+Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, Shashank Gupta, Bodhisattwa~Prasad Majumder, Katherine Hermann, Sean Welleck, Amir Yazdanbakhsh, and Peter Clark.
 \newblock Self-refine: Iterative refinement with self-feedback.
-\newblock In \emph{Advances in Neural Information Processing Systems},
-  volume~36, 2023.
-\newblock URL
-  \url{https://papers.neurips.cc/paper_files/paper/2023/hash/91edff07232fb1b55a505a9e9f6c0ff3-Abstract-Conference.html}.
+\newblock In \emph{Advances in Neural Information Processing Systems}, volume~36, 2023.
+\newblock URL \url{https://papers.neurips.cc/paper_files/paper/2023/hash/91edff07232fb1b55a505a9e9f6c0ff3-Abstract-Conference.html}.
 
-\bibitem[Xie et~al.(2023)Xie, Kawaguchi, Zhao, Zhao, Kan, He, and
-  Xie]{xie2023selfevaluation}
-Yuxi Xie, Kenji Kawaguchi, Yiran Zhao, Xu~Zhao, Min-Yen Kan, Junxian He, and
-  Qizhe Xie.
+\bibitem[Xie et~al.(2023)Xie, Kawaguchi, Zhao, Zhao, Kan, He, and Xie]{xie2023selfevaluation}
+Yuxi Xie, Kenji Kawaguchi, Yiran Zhao, Xu~Zhao, Min-Yen Kan, Junxian He, and Qizhe Xie.
 \newblock Self-evaluation guided beam search for reasoning.
-\newblock In \emph{Advances in Neural Information Processing Systems},
-  volume~36, 2023.
-\newblock URL
-  \url{https://papers.neurips.cc/paper_files/paper/2023/hash/81fde95c4dc79188a69ce5b24d63010b-Abstract-Conference.html}.
+\newblock In \emph{Advances in Neural Information Processing Systems}, volume~36, 2023.
+\newblock URL \url{https://papers.neurips.cc/paper_files/paper/2023/hash/81fde95c4dc79188a69ce5b24d63010b-Abstract-Conference.html}.
 
-\bibitem[Yang et~al.(2026)Yang, Wei, Deng, Jiang, Sun, Zhang, Wu, Wen, and
-  Lo]{yang2026revisable}
-Chengran Yang, Zichao Wei, Heminghao Deng, Jinfeng Jiang, Zhensu Sun, Ting
-  Zhang, Tianyi Wu, Ming Wen, and David Lo.
-\newblock Autoregressive, yet revisable: In-decoding revision for secure code
-  generation.
-\newblock In \emph{Proceedings of the 43rd International Conference on Machine
-  Learning}, volume 306 of \emph{Proceedings of Machine Learning Research},
-  pages 146348--146368, 2026.
+\bibitem[Yang et~al.(2026)Yang, Wei, Deng, Jiang, Sun, Zhang, Wu, Wen, and Lo]{yang2026revisable}
+Chengran Yang, Zichao Wei, Heminghao Deng, Jinfeng Jiang, Zhensu Sun, Ting Zhang, Tianyi Wu, Ming Wen, and David Lo.
+\newblock Autoregressive, yet revisable: In-decoding revision for secure code generation.
+\newblock In \emph{Proceedings of the 43rd International Conference on Machine Learning}, volume 306 of \emph{Proceedings of Machine Learning Research}, pages 146348--146368, 2026.
 \newblock URL \url{https://proceedings.mlr.press/v306/yang26ch.html}.
 
-\bibitem[Zheng et~al.(2023)Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li,
-  Li, Xing, Zhang, Gonzalez, and Stoica]{zheng2023judging}
-Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao
-  Zhuang, Zi~Lin, Zhuohan Li, Dacheng Li, Eric~P. Xing, Hao Zhang, Joseph~E.
-  Gonzalez, and Ion Stoica.
+\bibitem[Zheng et~al.(2023)Zheng, Chiang, Sheng, Zhuang, Wu, Zhuang, Lin, Li, Li, Xing, Zhang, Gonzalez, and Stoica]{zheng2023judging}
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi~Lin, Zhuohan Li, Dacheng Li, Eric~P. Xing, Hao Zhang, Joseph~E. Gonzalez, and Ion Stoica.
 \newblock Judging llm-as-a-judge with mt-bench and chatbot arena.
-\newblock In \emph{Advances in Neural Information Processing Systems, Datasets
-  and Benchmarks Track}, 2023.
+\newblock In \emph{Advances in Neural Information Processing Systems, Datasets and Benchmarks Track}, 2023.
 \newblock URL \url{https://arxiv.org/abs/2306.05685}.
 
-
 \bibitem[Chuang et~al.(2025)Chuang, Sarma, Gopalan, Boccio, Bolouki, Hu, and Zhou]{chuang2025confidence}
-Yu-Neng Chuang, Prathusha~Kameswara Sarma, Parikshit Gopalan, John Boccio,
-  Sara Bolouki, Xia Hu, and Helen Zhou.
+Yu-Neng Chuang, Prathusha~Kameswara Sarma, Parikshit Gopalan, John Boccio, Sara Bolouki, Xia Hu, and Helen Zhou.
 \newblock Learning to route llms with confidence tokens.
-\newblock In \emph{Proceedings of the 42nd International Conference on Machine Learning},
-  volume 267 of \emph{Proceedings of Machine Learning Research}, pages 10859--10878, 2025.
+\newblock In \emph{Proceedings of the 42nd International Conference on Machine Learning}, volume 267 of \emph{Proceedings of Machine Learning Research}, pages 10859--10878, 2025.
 \newblock URL \url{https://proceedings.mlr.press/v267/chuang25b.html}.
 
 \bibitem[Guo et~al.(2026)Guo, Gu, Jin, Spanos, and Lavaei]{guo2026uncertainty}
@@ -123,19 +79,15 @@ Junyu Guo, Shangding Gu, Ming Jin, Costas~J. Spanos, and Javad Lavaei.
 \newblock URL \url{https://arxiv.org/abs/2604.05306}.
 
 \bibitem[Kumaran et~al.(2026)Kumaran, Conmy, Barbero, Osindero, Patraucean, and Velickovic]{kumaran2026confidence}
-Dharshan Kumaran, Arthur Conmy, Federico Barbero, Simon Osindero,
-  Viorica Patraucean, and Petar Velickovic.
+Dharshan Kumaran, Arthur Conmy, Federico Barbero, Simon Osindero, Viorica Patraucean, and Petar Velickovic.
 \newblock How do llms compute verbal confidence.
 \newblock \emph{arXiv preprint arXiv:2603.17839}, 2026.
 \newblock URL \url{https://arxiv.org/abs/2603.17839}.
 
 \bibitem[Zhao et~al.(2024)Zhao, Qiao, Ou, Zhang, Chang, Piao, Li, Li, Zhu, and Liu]{zhao2024selfeval}
-Xiaofeng Zhao, Xiaosong Qiao, Kaiwen Ou, Min Zhang, Su Chang, Mengyao Piao,
-  Yuang Li, Yinglu Li, Ming Zhu, and Yilun Liu.
-\newblock Hw-tsc at semeval-2024 task 5: Self-eval? a confident llm system for
-  auto prediction and evaluation for the legal argument reasoning task.
-\newblock In \emph{Proceedings of the 18th International Workshop on Semantic Evaluation (SemEval-2024)},
-  pages 1806--1810. Association for Computational Linguistics, 2024.
+Xiaofeng Zhao, Xiaosong Qiao, Kaiwen Ou, Min Zhang, Su Chang, Mengyao Piao, Yuang Li, Yinglu Li, Ming Zhu, and Yilun Liu.
+\newblock Hw-tsc at semeval-2024 task 5: Self-eval? a confident llm system for auto prediction and evaluation for the legal argument reasoning task.
+\newblock In \emph{Proceedings of the 18th International Workshop on Semantic Evaluation (SemEval-2024)}, pages 1806--1810. Association for Computational Linguistics, 2024.
 \newblock \doi{10.18653/v1/2024.semeval-1.255}.
 \newblock URL \url{https://aclanthology.org/2024.semeval-1.255/}.
 

@@ -1,124 +1,156 @@
-# Zero-Shot Inline Self-Scoring Across 23 Language Models
+# Inline Self-Scoring During LLM Generation
 
-Reproducibility repository for:
+Reproducibility update for:
 
-> **Victor Lavrenko. _Zero-Shot Inline Self-Scoring Across 23 Language Models._ 2026.**
+> **Victor Lavrenko. _Inline Self-Scoring During LLM Generation._ 2026.**
 
-The paper asks whether an LLM can emit a local self-evaluation signal **inside the original generation trajectory**, rather than requiring a separate evaluator pass. Its primary question is about **generation quality, not score quality**: before testing whether an inline score is calibrated or useful for control, we first need to establish that adding the evaluation channel does not damage the answer itself. The intervention is prompt-only: after every sentence, the treatment asks the generator to append an `<AI SCORE: n>` estimate of how AI-generated the sentence sounds. Scores are stripped before judging and are never used for revision, selection, branching, or regeneration.
+The paper studies a prerequisite for using an inline self-evaluation channel: **if a model is already instructed to optimize an output property, does additionally requiring it to self-score that same property damage the generated answer?** The emitted scores are stripped before judging and are never used for revision, selection, branching, or regeneration. Score calibration and downstream usefulness are deliberately separate questions.
 
-## Headline results
+This v10 update preserves the existing v9 primary AI-likeness study, 20-model breadth replication, and native-language validation, and adds the completed **criterion-matched study** used in the revised paper.
 
-### Primary study: 4 models × 100 prompts
+## New criterion-matched study
 
-| Generator | Self-scored cleaner | Baseline cleaner | Tie | Directional self-score rate |
-|---|---:|---:|---:|---:|
-| Claude Opus 5.5 | 78 | 14 | 7 | 84.8% |
-| Gemini 3.1 Pro | 66 | 21 | 8 | 75.9% |
-| GPT-5.6 Sol | 59 | 27 | 14 | 68.6% |
-| DeepSeek V4.1 Flash | 41 | 42 | 13 | 49.4% |
-| **Overall** | **244** | **104** | **42** | **70.1%** |
+Five matched objectives are tested:
 
-Ten of 400 generator/prompt pairs are indeterminate at panel aggregation. The prompt-cluster bootstrap reported in the paper is approximately **65.1%–75.0%**.
+- AI-likeness / naturalness
+- clarity
+- relevance
+- factual accuracy
+- brevity / concision
 
-### Breadth replication: 20 configurations × 20 prompts
+For each generator × prompt × criterion there are exactly two arms:
 
-Twenty-four candidate configurations were screened **before quality judging** using only treatment-compliance criteria; 20 passed and were frozen into the breadth roster. The completed breadth study contains 800 generations and a fixed three-model mirrored judge panel.
+1. **objective only** — optimize the criterion;
+2. **objective + self-score** — the identical optimization instruction plus sentence-level 0–100 scoring of that same criterion.
 
-- self-scored cleaner: **206**
-- baseline cleaner: **149**
-- ties: **31**
-- resolved pairs: **386/400**
-- directional self-score rate: **58.0%**
-- model directions: **15 positive / 4 negative / 1 balanced** (`p=0.0192` sign test)
-- developer-family directions: **9 positive / 3 negative / 1 balanced** (`p=0.146`)
-- family/model/pair bootstrap 95% interval: **47.4%–67.4%**
+The frozen study contains:
 
-A strict sensitivity check re-applies the original treatment-compliance rule to every breadth treatment output. It retains 380/400 treatment outputs and leaves the directional rate essentially unchanged: **199 vs. 144, 29 ties; 58.0%**.
+- 20 prompts;
+- 4 generators;
+- 5 criteria;
+- 2 arms;
+- **800 generations**;
+- **400 matched pairs**;
+- **3,200 mirrored judge calls**.
 
-Because DeepSeek V4.1 Flash appears in both studies, the combined experiments contain **23 distinct generator model names**, not 24 independent models.
+Each judge returns two endpoints in the same call:
 
-### Human validation and interpretation
+- **OVERALL** — primary: which answer is better overall for the user task?
+- **TARGET** — secondary: which answer better satisfies the criterion being optimized?
 
-A small blind validation in a language native to the author is much less decisive than the AI panel: **7 self-scoring preferences, 5 baseline preferences, and 12 ties**. It does not establish a human-perceived quality improvement, but it provides no indication of systematic degradation. This is consistent with the paper's deliberately staged claim: the present study establishes that the added inline evaluation channel can coexist with generation without generally ruining output; whether the emitted numbers themselves are calibrated or useful control signals is a separate next question.
+The generator's own fresh judgment is excluded from the primary external panel.
+
+### Headline matched results
+
+For overall answer quality, the descriptive pooled result is:
+
+- self-scoring preferred: **127**
+- objective-only preferred: **92**
+- ties: **6**
+- indeterminate: **175**
+- directional self-scoring rate: **58.0%**
+
+For the targeted criterion:
+
+- self-scoring preferred: **144**
+- objective-only preferred: **83**
+- ties: **16**
+- indeterminate: **157**
+- directional self-scoring rate: **63.4%**
+
+Pooled rows are descriptive because criteria, prompts, and model families are not independent replications.
+
+| Criterion | Overall self-score | Objective only | Overall rate | Target self-score | Objective only | Target rate |
+|---|---:|---:|---:|---:|---:|---:|
+| AI-likeness | 42 | 15 | 73.7% | 42 | 19 | 68.9% |
+| Clarity | 19 | 25 | 43.2% | 24 | 17 | 58.5% |
+| Relevance | 12 | 21 | 36.4% | 16 | 17 | 48.5% |
+| Factuality | 22 | 15 | 59.5% | 22 | 10 | 68.8% |
+| Brevity | 32 | 16 | 66.7% | 40 | 20 | 66.7% |
+
+The overall effect is strongly model-dependent: GPT-5.6 Sol 78.4%, Claude Opus 5.5 64.0%, Gemini 3.1 Pro Preview 60.3%, and DeepSeek V4.1 Flash 28.0%.
+
+## Existing v9 studies retained in the repository
+
+The previous release remains part of the reproduction record:
+
+- **Primary AI-likeness study:** 4 models × 100 prompts; 244 self-scored cleaner vs 104 baseline cleaner, 42 ties; 70.1% directional rate.
+- **Breadth replication:** 20 screened configurations × 20 prompts; 206 self-scored cleaner vs 149 baseline cleaner, 31 ties; 58.0% directional rate.
+- **Human validation:** 7 self-scoring preferences, 5 baseline preferences, 12 ties.
+
+Across the primary and breadth AI-likeness studies there are 23 distinct generator model names.
 
 ## Repository layout
 
 ```text
 paper/
-  v9 four-page-main-text LaTeX source and rendered PDF
+  revised four-page-main-text LaTeX source and rendered PDF
 experiments/main/
-  exact 100-prompt primary-study runner, prompts, configs, tests, frozen run
+  original 100-prompt primary AI-likeness study (existing v9 release)
 experiments/breadth/
-  24-candidate outcome-blind screen, frozen 20-model roster, exact breadth runner,
-  full 800-generation run, mirrored judgments, provider records, and analysis
+  original screened 20-model breadth replication (existing v9 release)
 experiments/native_language_pilot/
-  24-pair native-language pilot, AI judging, human-validation HTML, frozen run
-human/
-  blinded author validation JSON used in the paper
+  original native-language pilot (existing v9 release)
+experiments/matched_scoring_v2/
+  NEW criterion-matched runner, prompts, criteria, panel aggregation, and analyses
+artifacts/matched-scoring-v2-frozen-data.tgz
+  complete frozen exported generations, attempts, judgments, and analysis data
 analysis/
-  reproduce_paper_stats.py
+  reproduce_paper_stats.py          # existing v9 checks
+  reproduce_matched_stats.py        # NEW matched-study hard checks
 ```
 
-## Reproduce the reported statistics without API calls
+## Reproduce the new matched statistics without API calls
 
-Requires only Python 3.10+ and the standard library:
+From the repository root:
 
-```bash
-python analysis/reproduce_paper_stats.py
+```sh
+. ./experiments/matched_scoring_v2/python_env.sh
+run_python analysis/reproduce_matched_stats.py
 ```
 
-This reconstructs the primary external-panel result, its prompt-cluster bootstrap, the breadth panel result, model/family direction checks, the deterministic family/model/pair bootstrap, the strict breadth sensitivity check, emitted-score negative result, and native-language pilot counts. The script contains hard assertions for the paper's headline values.
+For the broader release check:
 
-For a broader local check:
-
-```bash
-bash verify.sh
+```sh
+sh verify.sh
 ```
 
-## Re-run the primary study
+No API key is needed for frozen-statistics verification.
 
-Set `OPENROUTER_API_KEY` in your environment. The repository contains no API key.
+## Re-run the matched study
 
-```bash
-cd experiments/main
-python -m unittest discover -s tests -v
-bash run_smoke.sh
-bash run_full.sh
+Set `OPENROUTER_API_KEY` yourself in the environment; the repository never sets, prints, or stores it.
+
+```sh
+cd experiments/matched_scoring_v2
+sh verify.sh
+sh run_smoke.sh
+sh run_full.sh
+sh status.sh
 ```
 
-The primary run uses 100 prompts × 4 generators × 2 conditions = **800 generation calls**, followed by mirrored judging. It is resumable via SQLite.
+The runner is resumable via SQLite when executing fresh API calls. No SQLite file is required for frozen reproduction: the repository includes compact paper-facing results directly and the complete exported raw dataset in `artifacts/matched-scoring-v2-frozen-data.tgz`.
 
-## Re-run the breadth protocol
+## Frozen matched artifacts
 
-See [`experiments/breadth/README.md`](experiments/breadth/README.md) for the exact screening and full-run procedure.
+For convenient browsing, `experiments/matched_scoring_v2/runs/matched-full/` includes the manifest and compact analysis outputs. The complete frozen exported dataset is stored in `artifacts/matched-scoring-v2-frozen-data.tgz`; unpacking it at the repository root restores the full results tree. The frozen dataset includes:
 
-The frozen release includes:
-
-- the 24 candidate definitions;
-- provider resolution used for the run;
-- the machine-readable outcome-blind screen report and frozen 20-model roster;
-- the 20 breadth prompts and deterministic selection record;
-- all 800 full-run generations;
-- raw and resolved mirrored judgments;
-- provider-match and treatment-compliance exports;
-- the completed SQLite database and manifest;
-- model- and family-level analysis outputs.
-
-The original compliance-screen SQLite database itself was not included in the results archive supplied when this release was assembled; the frozen `screen_report.json`, `screen_report.md`, `models_screened.json`, screening code, and earlier v1 screen artifacts are included. This does not affect the completed breadth-effect dataset or its analysis, but the distinction is recorded explicitly rather than hidden.
-
-## Native-language pilot
-
-```bash
-cd experiments/native_language_pilot
-sh run.sh
-```
-
-The frozen pilot contains 24 blinded pairs (six per primary generator), mirrored AI judging, sentence-level self-scores, and the offline human-validation file.
+- `manifest.json` — frozen protocol identity;
+- `results/generations.csv` — all 800 generations;
+- `results/attempts.csv` — physical API attempts and retries;
+- `results/judgments.csv` — all 3,200 mirrored judgment calls;
+- `results/judgments_resolved.csv` — mirrored-resolution output;
+- `results/panel_pairs.csv` — 400 external-panel pair outcomes;
+- `results/criterion_summary.csv` — criterion × endpoint statistics;
+- `results/generator_aggregate.csv` — model-level effects;
+- `results/model_by_criterion.csv` — model × criterion effects;
+- `results/compliance.csv` — treatment-tag compliance;
+- `results/summary.json` and `REPORT.md` — machine/human-readable summaries.
 
 ## Reproducibility caveat
 
-Many tested systems are proprietary or served through rapidly changing upstream stacks. This archive preserves prompts, route/provider records, generation text, score tags, judgments, manifests, and SQLite state, but exact future API reproduction is not guaranteed. The frozen data are sufficient to reproduce the reported statistics without making any API calls.
+Many tested systems are proprietary or served through changing upstream stacks. Frozen prompts, model/provider records, generation text, score tags, mirrored judgments, manifests, and analysis exports are included so the reported statistics can be reproduced without future API access. Exact fresh API regeneration is not guaranteed.
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff).
+See `CITATION.cff`.

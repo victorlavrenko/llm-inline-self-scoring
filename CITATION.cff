@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or data, please cite the paper."
-title: "Zero-Shot Inline Self-Scoring Across 23 Language Models"
+title: "Inline Self-Scoring During LLM Generation"
 type: software
 authors:
   - family-names: Lavrenko
@@ -8,4 +8,4 @@ authors:
     email: victor@peacetech.vc
     affiliation: PeaceTech VC
 repository-code: "https://github.com/victorlavrenko/llm-inline-self-scoring"
-date-released: 2026-10-07
+date-released: 2026-10-08

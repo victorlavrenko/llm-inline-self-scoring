@@ -1,0 +1,63 @@
+{
+  "code_version": "matched-scoring-2.0",
+  "schema_version": "1",
+  "generation_protocol": "criterion-matched-objective-v1",
+  "judge_protocol": "blind-dual-endpoint-mirrored-v1",
+  "models_sha256": "2e67edaf7cf5ab732872009b3836d5d90a09d04d93249a63fb688dc717705c66",
+  "prompts_sha256": "a0ca090b6f0f1d5b771f2886c60382efe389f7b7041b3192567480d0e9310ada",
+  "criteria_sha256": "c26112b51e2cbc6c23bd50aa8bd8ea63f63d07ec10e380a8bd9c8decdfdc92c4",
+  "selected_criteria": [
+    "ai_likeness",
+    "clarity",
+    "relevance",
+    "factuality",
+    "brevity"
+  ],
+  "cases": 20,
+  "replicates": 1,
+  "seed": 20261008,
+  "generation_temperature": 0.7,
+  "judge_temperature": 0.0,
+  "mirror": true,
+  "provider_overrides": {
+    "deepseek-v4.1-flash": "together"
+  },
+  "generators": [
+    "gpt-5.6-sol",
+    "claude-opus-5.5",
+    "gemini-3.1-pro-preview",
+    "deepseek-v4.1-flash"
+  ],
+  "judges": [
+    "gpt-5.6-sol",
+    "claude-opus-5.5",
+    "gemini-3.1-pro-preview",
+    "deepseek-v4.1-flash"
+  ],
+  "prompt_ids": [
+    "p086",
+    "p087",
+    "p028",
+    "p025",
+    "p046",
+    "p045",
+    "p063",
+    "p069",
+    "p054",
+    "p052",
+    "p001",
+    "p005",
+    "p077",
+    "p075",
+    "p094",
+    "p091",
+    "p013",
+    "p015",
+    "p032",
+    "p034"
+  ],
+  "arms": [
+    "objective_only",
+    "selfscore"
+  ]
+}

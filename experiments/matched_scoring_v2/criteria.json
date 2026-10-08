@@ -1,0 +1,37 @@
+{
+  "ai_likeness": {
+    "label": "AI-likeness / naturalness",
+    "optimization_instruction": "Optimize specifically for natural, human-like prose. Avoid generic, formulaic, clichéd, overly polished, promotional, repetitive, or obviously AI-generated phrasing. Prefer concrete, natural, specific language that sounds like something a real person would genuinely write.",
+    "tag": "AI SCORE",
+    "score_instruction": "After every sentence, assess how likely an average human reader would be to think that sentence was AI-generated. Use an integer from 0 to 100, where 0 means very human-like and 100 means obviously AI-generated. Put the sentence's normal closing punctuation first, then immediately append the assessment as <AI SCORE: n>.",
+    "target_judge_instruction": "Choose the answer that sounds LESS like stereotypical AI-generated prose while still fulfilling the user's task. Prefer natural, specific, non-formulaic writing; do not reward factual errors or failure to answer the task merely because the prose sounds unusual."
+  },
+  "clarity": {
+    "label": "Clarity",
+    "optimization_instruction": "Optimize specifically for clarity. Make every sentence easy for the intended general audience to understand. Avoid ambiguity, unnecessary complexity, confusing structure, and unexplained wording when a clearer formulation is available.",
+    "tag": "CLARITY RISK",
+    "score_instruction": "After every sentence, assess the risk that an average reader would find that sentence unclear, ambiguous, or unnecessarily difficult to understand. Use an integer from 0 to 100, where 0 means completely clear and 100 means very unclear. Put the sentence's normal closing punctuation first, then immediately append the assessment as <CLARITY RISK: n>.",
+    "target_judge_instruction": "Choose the answer that is CLEARER and easier for the intended general audience to understand while still fulfilling the user's task. Do not reward oversimplification that removes required content or introduces errors."
+  },
+  "relevance": {
+    "label": "Relevance",
+    "optimization_instruction": "Optimize specifically for relevance. Make every sentence directly useful for fulfilling the user's request. Avoid tangents, unnecessary framing, redundant material, and information that does not help answer the requested topic.",
+    "tag": "RELEVANCE RISK",
+    "score_instruction": "After every sentence, assess the risk that the sentence is irrelevant, tangential, redundant, or unnecessary for fulfilling the user's request. Use an integer from 0 to 100, where 0 means directly useful to the request and 100 means wholly irrelevant. Put the sentence's normal closing punctuation first, then immediately append the assessment as <RELEVANCE RISK: n>.",
+    "target_judge_instruction": "Choose the answer that is MORE RELEVANT to the user's request: it should devote its content directly to fulfilling the task and avoid tangents, unnecessary framing, or redundant material. Do not reward omission of required content."
+  },
+  "factuality": {
+    "label": "Factual accuracy",
+    "optimization_instruction": "Optimize specifically for factual accuracy and reliability. Avoid false, misleading, or unsupported factual claims. When a qualification is genuinely necessary for accuracy, state it concisely rather than pretending to greater certainty.",
+    "tag": "FACTUAL RISK",
+    "score_instruction": "After every sentence, assess the risk that any factual claim in that sentence is false, misleading, or insufficiently supported. Use an integer from 0 to 100, where 0 means no factual concern and 100 means very likely false or misleading. For a sentence that contains no factual claim, use 0. Put the sentence's normal closing punctuation first, then immediately append the assessment as <FACTUAL RISK: n>.",
+    "target_judge_instruction": "Choose the answer that is MORE FACTUALLY ACCURATE and reliable while still fulfilling the user's task. Penalize false or misleading claims and material omissions that make the explanation inaccurate; do not reward excessive hedging by itself."
+  },
+  "brevity": {
+    "label": "Brevity / concision",
+    "optimization_instruction": "Optimize specifically for concision. Use as few unnecessary words as possible while still fully satisfying the user's requested content, length, and formatting constraints. Avoid repetition, padding, and verbose phrasing; do not omit information needed to answer the task.",
+    "tag": "VERBOSITY RISK",
+    "score_instruction": "After every sentence, assess how unnecessarily verbose that sentence is. Use an integer from 0 to 100, where 0 means maximally concise without losing useful information and 100 means extremely verbose or padded. Put the sentence's normal closing punctuation first, then immediately append the assessment as <VERBOSITY RISK: n>.",
+    "target_judge_instruction": "Choose the answer that is MORE CONCISE without sacrificing information needed to fulfill the user's task. Prefer economical wording and less repetition, but do not reward incompleteness merely for being shorter."
+  }
+}

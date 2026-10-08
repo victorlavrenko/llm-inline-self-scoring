@@ -18,4 +18,4 @@ jobs:
         with:
           python-version: "3.12"
       - name: Reproduce reported statistics and run tests
-        run: bash verify.sh
+        run: sh verify.sh

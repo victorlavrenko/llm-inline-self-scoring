@@ -1,0 +1,12 @@
+<PARSED TEXT FOR SHEET: 1 / 1 TABS
+TAB NAME: experiments___matched_scoring_v2___runs___matched-full___results___compliance.csv>index,criterion,arm,n,compliant,noncompliant,leaks,mean_tag_count
+0,ai_likeness,objective_only,80,80,0,0,0.0
+1,ai_likeness,selfscore,80,80,0,0,6.8875
+2,clarity,objective_only,80,80,0,0,0.0
+3,clarity,selfscore,80,80,0,0,6.8875
+4,relevance,objective_only,80,80,0,0,0.0
+5,relevance,selfscore,80,80,0,0,6.6125
+6,factuality,objective_only,80,80,0,0,0.0
+7,factuality,selfscore,80,80,0,0,6.9375
+8,brevity,objective_only,80,80,0,0,0.0
+9,brevity,selfscore,80,80,0,0,6.575
